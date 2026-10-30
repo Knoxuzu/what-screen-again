@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 440" role="img"
+      aria-label="Knox character silhouette with neutral expression">
+
+      <defs>
+            <linearGradient id="knoxOutfit" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#303047" />
+                  <stop offset="1" stop-color="#171a29" />
+            </linearGradient>
+
+            <linearGradient id="knoxFace" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#30283a" />
+                  <stop offset="1" stop-color="#171725" />
+            </linearGradient>
+      </defs>
+
+      <path d="M102 304
+           L78 315
+           Q48 328 42 362
+           L31 440 H309
+           L298 362
+           Q292 328 262 315
+           L238 304 Z" fill="url(#knoxOutfit)" />
+
+      <path d="M119 293
+           Q117 319 137 337
+           L170 352
+           L203 337
+           Q223 319 221 293
+           L204 282 H136 Z" fill="#34334a" />
+
+      <path d="M143 251 L143 302
+           Q170 326 197 302
+           L197 251 Z" fill="#211d2d" />
+
+      <path d="M143 298 L170 322 L197 298
+           L205 440 H135 Z" fill="#25263a" />
+
+      <path d="M102 304
+           L133 293
+           L170 327
+           L207 293
+           L238 304
+           L262 315
+           Q292 328 298 362
+           L309 440 H31
+           L42 362
+           Q48 328 78 315 Z" fill="url(#knoxOutfit)" />
+
+      <path d="M133 294 L170 327 L207 294" fill="none" stroke="#48475f" stroke-width="3" stroke-linecap="round"
+            stroke-linejoin="round" />
+
+      <path d="M47 410 L83 414
+           M293 410 L257 414" fill="none" stroke="#41415a" stroke-width="2" stroke-linecap="round" />
+
+      <path d="M108 151
+           Q108 112 140 103
+           Q170 93 200 104
+           Q232 115 232 151
+           L228 204
+           Q224 238 201 254
+           Q186 266 170 267
+           Q153 264 138 253
+           Q115 235 111 204 Z" fill="url(#knoxFace)" />
+
+      <path d="M111 176
+           Q96 169 99 190
+           Q101 204 113 205 Z" fill="#292334" />
+
+      <path d="M229 176
+           Q244 169 241 190
+           Q239 204 227 205 Z" fill="#292334" />
+
+      <path d="M103 181
+           Q91 158 99 135
+           L84 119
+           L112 124
+           Q104 99 132 84
+           L130 105
+           Q151 80 174 88
+           L169 102
+           Q198 82 221 102
+           L213 111
+           Q241 123 239 151
+           Q239 166 234 179
+           L225 184
+           L220 157
+           Q201 158 184 144
+           Q164 129 145 136
+           Q126 142 117 168
+           L112 191 Z" fill="#414052" />
+
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <ellipse cx="137" cy="183" rx="7" ry="9" stroke="#65d6df" stroke-width="2.5" />
+            <ellipse cx="201" cy="183" rx="7" ry="9" stroke="#65d6df" stroke-width="2.5" />
+      </g>
+
+      <ellipse cx="170" cy="231" rx="5" ry="7" fill="#65d6df" />
+
+      <circle cx="235" cy="207" r="3.5" fill="#65d6df" />
+      <circle cx="235" cy="207" r="1.3" fill="#b4f3f5" />
+
+</svg>

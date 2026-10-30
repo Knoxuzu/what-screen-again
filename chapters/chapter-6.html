@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b0812">
+    <meta name="description"
+        content="Act VI: The Face Beneath Filter — What Screen Again?, an interactive visual novel.">
+
+    <title>Act VI: The Face Beneath Filter | What Screen Again?</title>
+
+    <link rel="stylesheet" href="../css/chapter.css">
+    <link rel="stylesheet" href="../css/scene-art.css">
+
+    <script src="../js/progress.js" defer></script>
+    <script src="../js/chapter-opening.js" defer></script>
+    <script src="../js/chapterdialogues/helpers.js" defer></script>
+    <script src="../js/chapterdialogues/chapter-6.js" defer></script>
+    <script src="../js/endings.js" defer></script>
+    <script src="../js/story-engine.js" defer></script>
+</head>
+
+<body class="chapter-page" data-chapter="6">
+    <main class="game">
+        <section class="chapter-intro" id="chapterIntro">
+            <div class="intro-hud" aria-hidden="true">
+                <span class="hud-corner hud-tl"></span>
+                <span class="hud-corner hud-tr"></span>
+                <span class="hud-corner hud-bl"></span>
+                <span class="hud-corner hud-br"></span>
+
+                <span class="hud-label hud-label-tl"><i></i>REC</span>
+                <span class="hud-label hud-label-tr">6:50 AM</span>
+                <span class="hud-label hud-label-bl">DELIRIUM ACADEMY</span>
+                <span class="hud-label hud-label-br">FRAME 06 / 07</span>
+            </div>
+
+            <div class="intro-stage">
+                <div class="intro-notice intro-notice-a" aria-hidden="true"><span>◉</span>Your post is being shared
+                </div>
+                <div class="intro-notice intro-notice-b" aria-hidden="true"><span>✦</span>612 new comments</div>
+                <div class="intro-notice intro-notice-c" aria-hidden="true"><span>✉</span>70 unread messages</div>
+
+                <div class="intro-window">
+                    <div class="window-bar" aria-hidden="true">
+                        <span class="window-dots"><i></i><i></i><i></i></span>
+                        <span class="window-title">MEMORY FRAGMENT 06</span>
+                        <span class="window-status"><i></i>READY</span>
+                    </div>
+
+                    <div class="window-body">
+                        <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>ACT VI<span
+                                class="eyebrow-line" aria-hidden="true"></span></p>
+
+                        <h1>The Face Beneath <span class="title-glass">Filter</span></h1>
+
+                        <div class="intro-rule" aria-hidden="true">
+                            <span></span>
+                            <span class="intro-rule-mark">✳</span>
+                            <span></span>
+                        </div>
+
+                        <div class="intro-description">
+                            <p class="intro-line-accent">The filter comes off. Someone is still there.</p>
+                        </div>
+
+                        <button class="primary-button" id="beginChapter" type="button"> BEGIN CHAPTER <span
+                                aria-hidden="true">→</span></button>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="visual-novel hidden" id="visualNovel" aria-label="Visual novel gameplay">
+            <span class="progress-track" role="progressbar" aria-label="Chapter progress" aria-valuemin="0"
+                aria-valuemax="100" aria-valuenow="0" id="dialogueProgress">
+                <span class="progress-fill" id="progressFill"></span>
+            </span>
+
+            <div class="scene-heading">
+                <span id="sceneName">KNOX'S BEDROOM</span>
+                <span id="sceneTime">6:50 AM</span>
+            </div>
+
+            <div class="art-stage" id="artStage">
+                <div class="art-placeholder" id="artPlaceholder">
+                    <span class="placeholder-icon" aria-hidden="true">✳</span>
+                    <p>YOUR DRAWING GOES HERE</p>
+                    <small>Character sprites · Background art</small>
+                </div>
+
+                <div class="stage-overlay" aria-hidden="true"></div>
+
+                <p class="stage-caption" id="stageCaption">LIKTOREN, AFTER DARK</p>
+            </div>
+
+            <div class="choices hidden" id="choices" aria-label="Choose your response"></div>
+
+            <section class="dialogue-panel" id="dialoguePanel" data-state="ready">
+                <div class="speaker-nameplate" id="speakerNameplate">
+                    <span class="speaker-indicator" aria-hidden="true"></span>
+                    <span class="speaker" id="speaker">NARRATION</span>
+                </div>
+
+                <p class="dialogue-text" id="dialogueText" aria-hidden="true"></p>
+                <p class="sr-only" id="dialogueAnnounce" aria-live="polite"></p>
+
+                <span class="click-hint" id="clickHint" aria-hidden="true">▼</span>
+
+                <div class="quick-menu" id="dialogueNavigation" aria-label="Quick menu">
+                    <button class="quick-button" id="previousLine" type="button"
+                        title="Previous line (Left arrow)">BACK</button>
+                    <button class="quick-button" id="autoToggle" type="button" aria-pressed="false"
+                        title="Advance automatically">AUTO</button>
+                    <a class="quick-button" href="../chapters.html"
+                        title="Back to the fragment archive. Your place is saved.">ARCHIVE</a>
+
+                    <span class="quick-menu-spacer"></span>
+                    <span class="keyboard-hint">SPACE · ENTER · ARROW KEYS</span>
+                    <span id="sceneCounter">1 / 1</span>
+                </div>
+            </section>
+        </section>
+
+        <section class="chapter-complete hidden" id="chapterComplete" aria-labelledby="chapterCompleteTitle">
+            <div class="completion-mark" aria-hidden="true">✦</div>
+
+            <p class="eyebrow">END OF CHAPTER VI</p>
+
+            <h1 id="chapterCompleteTitle">The filter comes off.</h1>
+
+            <p class="subtitle">What is left on the other side of the glass is smaller than he feared, and harder to
+                look away from.</p>
+
+            <a class="primary-button button-link" href="../chapters.html"> RETURN TO CHAPTERS <span
+                    aria-hidden="true">→</span></a>
+        </section>
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,442 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#252454" />
+      <stop offset=".34" stop-color="#715078" />
+      <stop offset=".7" stop-color="#d98283" />
+      <stop offset="1" stop-color="#ffd29a" />
+    </linearGradient>
+    <linearGradient id="distantStone" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#75649b" />
+      <stop offset="1" stop-color="#42345f" />
+    </linearGradient>
+    <linearGradient id="stone" x1="0" y1="0" x2=".2" y2="1">
+      <stop stop-color="#51466f" />
+      <stop offset=".5" stop-color="#342b51" />
+      <stop offset="1" stop-color="#211b38" />
+    </linearGradient>
+    <linearGradient id="roof" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#40345e" />
+      <stop offset="1" stop-color="#1a1733" />
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#ffe2b0" />
+      <stop offset=".4" stop-color="#e8a0ae" />
+      <stop offset="1" stop-color="#7965b2" />
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#302747" />
+      <stop offset="1" stop-color="#171426" />
+    </linearGradient>
+    <radialGradient id="sunGlow">
+      <stop stop-color="#fff0c9" stop-opacity=".9" />
+      <stop offset=".35" stop-color="#ffbc9c" stop-opacity=".4" />
+      <stop offset="1" stop-color="#ffad9a" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="vignette">
+      <stop offset=".48" stop-color="#05040b" stop-opacity="0" />
+      <stop offset="1" stop-color="#05040b" stop-opacity=".48" />
+    </radialGradient>
+    <pattern id="distantWindows" width="46" height="62" patternUnits="userSpaceOnUse">
+      <rect x="7" y="8" width="7" height="12" rx="1" fill="#ffe4b4" opacity=".58" />
+      <rect x="23" y="8" width="7" height="12" rx="1" fill="#f5a5a4" opacity=".5" />
+      <rect x="7" y="32" width="7" height="12" rx="1" fill="#ffd9a0" opacity=".3" />
+      <rect x="23" y="32" width="7" height="12" rx="1" fill="#ffd9a0" opacity=".62" />
+    </pattern>
+    <pattern id="nearWindows" width="66" height="74" patternUnits="userSpaceOnUse">
+      <rect x="12" y="12" width="12" height="18" rx="1" fill="#ffe4b4" opacity=".75" />
+      <rect x="37" y="12" width="12" height="18" rx="1" fill="#f4a1b0" opacity=".52" />
+      <rect x="12" y="43" width="12" height="18" rx="1" fill="#ffd49b" opacity=".52" />
+      <rect x="37" y="43" width="12" height="18" rx="1" fill="#080817" opacity=".3" />
+    </pattern>
+    <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="22" />
+    </filter>
+    <filter id="smallGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="7" />
+    </filter>
+    <clipPath id="scene">
+      <rect width="1600" height="900" />
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#scene)">
+    <rect width="1600" height="570" fill="url(#sky)" />
+    <ellipse cx="1070" cy="430" rx="530" ry="310" fill="url(#sunGlow)" />
+    <circle cx="1080" cy="445" r="135" fill="#ffdaa7" opacity=".08" filter="url(#softGlow)" />
+
+    <path d="M0 250 Q230 195 440 250 T870 238 T1280 218 T1600 245 L1600 278 Q1320 250 1100 276 T650 285 T0 286Z"
+      fill="#eaa0ac" opacity=".1" />
+    <path d="M0 355 Q300 318 520 354 T1000 340 T1600 360" fill="none" stroke="#ffd4b2" stroke-width="2" opacity=".14" />
+    <path d="M0 410 Q280 378 550 406 T1080 396 T1600 414" fill="none" stroke="#ffd8b8" stroke-width="1" opacity=".12" />
+
+    <g id="distant-city">
+      <defs>
+        <clipPath id="distantCityClip">
+          <path d="
+            M0 425V300H35V280H52V260H67V425Z
+            M25 425V330H82V295H105V315H125V425Z
+            M95 425V345H145V290H164V270H181V290H201V425Z
+            M175 425V315H225V275H243V300H266V425Z
+            M245 425V340H290V290H309V310H333V425Z
+            M315 425V305H365V280H385V425Z
+            M365 425V270H408V240H426V260H448V425Z
+            M430 425V320H482V285H500V305H523V425Z
+            M500 425V345H550V300H570V275H588V425Z
+            M560 425V290H606V260H625V425Z
+            M615 425V330H663V285H682V305H704V425Z
+            M680 425V300H727V270H746V425Z
+            M725 425V335H780V290H800V310H821V425Z
+            M790 425V270H829V240H848V260H870V425Z
+            M850 425V320H901V285H919V305H940V425Z
+            M915 425V345H960V300H981V275H999V425Z
+            M970 425V295H1018V270H1038V425Z
+            M1025 425V325H1075V285H1095V305H1118V425Z
+            M1090 425V275H1132V250H1150V425Z
+            M1140 425V320H1190V285H1208V305H1230V425Z
+            M1200 425V340H1250V295H1270V270H1288V425Z
+            M1260 425V285H1305V260H1325V425Z
+            M1310 425V325H1360V285H1380V305H1402V425Z
+            M1375 425V300H1420V265H1440V425Z
+            M1420 425V340H1470V300H1490V275H1508V425Z
+            M1480 425V290H1530V260H1550V240H1568V425Z
+            M1535 425V305H1580V275H1600V425Z" />
+        </clipPath>
+
+        <pattern id="cityWindows" width="24" height="32" patternUnits="userSpaceOnUse">
+          <rect x="4" y="5" width="6" height="11" rx=".8" fill="#ffdcae" opacity=".7" />
+          <rect x="15" y="5" width="5" height="11" rx=".8" fill="#eaa2b0" opacity=".5" />
+          <rect x="4" y="21" width="6" height="7" rx=".8" fill="#ffdcae" opacity=".4" />
+          <rect x="15" y="21" width="5" height="7" rx=".8" fill="#ffdcae" opacity=".3" />
+        </pattern>
+      </defs>
+
+      <g fill="#5b4b7c" opacity=".82">
+        <path d="M0 425V350H70V425Z" />
+        <path d="M60 425V325H150V425Z" />
+        <path d="M145 425V350H230V425Z" />
+        <path d="M225 425V335H320V425Z" />
+        <path d="M310 425V345H400V425Z" />
+        <path d="M395 425V330H490V425Z" />
+        <path d="M480 425V350H575V425Z" />
+        <path d="M565 425V330H660V425Z" />
+        <path d="M650 425V345H745V425Z" />
+        <path d="M735 425V335H830V425Z" />
+        <path d="M820 425V350H915V425Z" />
+        <path d="M905 425V330H1000V425Z" />
+        <path d="M990 425V345H1085V425Z" />
+        <path d="M1075 425V330H1170V425Z" />
+        <path d="M1160 425V350H1255V425Z" />
+        <path d="M1245 425V335H1340V425Z" />
+        <path d="M1330 425V345H1425V425Z" />
+        <path d="M1415 425V330H1510V425Z" />
+        <path d="M1500 425V350H1600V425Z" />
+      </g>
+
+      <g fill="url(#distantStone)">
+        <path d="M0 425V300H35V280H52V260H67V425Z" />
+        <path d="M25 425V330H82V295H105V315H125V425Z" />
+        <path d="M95 425V345H145V290H164V270H181V290H201V425Z" />
+        <path d="M175 425V315H225V275H243V300H266V425Z" />
+        <path d="M245 425V340H290V290H309V310H333V425Z" />
+        <path d="M315 425V305H365V280H385V425Z" />
+        <path d="M365 425V270H408V240H426V260H448V425Z" />
+        <path d="M430 425V320H482V285H500V305H523V425Z" />
+        <path d="M500 425V345H550V300H570V275H588V425Z" />
+        <path d="M560 425V290H606V260H625V425Z" />
+        <path d="M615 425V330H663V285H682V305H704V425Z" />
+        <path d="M680 425V300H727V270H746V425Z" />
+        <path d="M725 425V335H780V290H800V310H821V425Z" />
+        <path d="M790 425V270H829V240H848V260H870V425Z" />
+        <path d="M850 425V320H901V285H919V305H940V425Z" />
+        <path d="M915 425V345H960V300H981V275H999V425Z" />
+        <path d="M970 425V295H1018V270H1038V425Z" />
+        <path d="M1025 425V325H1075V285H1095V305H1118V425Z" />
+        <path d="M1090 425V275H1132V250H1150V425Z" />
+        <path d="M1140 425V320H1190V285H1208V305H1230V425Z" />
+        <path d="M1200 425V340H1250V295H1270V270H1288V425Z" />
+        <path d="M1260 425V285H1305V260H1325V425Z" />
+        <path d="M1310 425V325H1360V285H1380V305H1402V425Z" />
+        <path d="M1375 425V300H1420V265H1440V425Z" />
+        <path d="M1420 425V340H1470V300H1490V275H1508V425Z" />
+        <path d="M1480 425V290H1530V260H1550V240H1568V425Z" />
+        <path d="M1535 425V305H1580V275H1600V425Z" />
+      </g>
+
+      <g clip-path="url(#distantCityClip)">
+        <rect x="0" y="230" width="1600" height="195" fill="url(#cityWindows)" opacity=".9" />
+        <rect x="0" y="230" width="1600" height="195" fill="#292344" opacity=".12" />
+      </g>
+
+      <g fill="none" stroke="#b79ab9" stroke-width="1.2" opacity=".24">
+        <path d="M35 280V425 M82 330V425 M145 345V425
+                 M225 315V425 M290 340V425 M365 305V425
+                 M408 270V425 M482 320V425 M550 345V425
+                 M606 290V425 M663 330V425 M727 300V425
+                 M780 335V425 M829 270V425 M901 320V425
+                 M960 345V425 M1018 295V425 M1075 325V425
+                 M1132 275V425 M1190 320V425 M1250 340V425
+                 M1305 285V425 M1360 325V425 M1420 300V425
+                 M1470 340V425 M1530 290V425 M1580 305V425" />
+      </g>
+
+      <g fill="url(#distantStone)" opacity=".96">
+        <path d="M0 425V300H45V274H60V425Z" />
+        <path d="M72 425V345H118V315H134V425Z" />
+        <path d="M150 425V285H185V260H201V285H218V425Z" />
+        <path d="M231 425V330H280V285H296V330H320V425Z" />
+        <path d="M330 425V305H377V425Z" />
+        <path d="M390 425V260H425V235H440V260H464V425Z" />
+        <path d="M475 425V330H530V290H545V330H570V425Z" />
+        <path d="M580 425V270H620V425Z" />
+        <path d="M635 425V320H680V285H695V320H722V425Z" />
+        <path d="M735 425V300H780V425Z" />
+        <path d="M790 425V270H827V235H844V270H870V425Z" />
+        <path d="M880 425V325H920V285H936V325H960V425Z" />
+        <path d="M975 425V295H1020V425Z" />
+        <path d="M1035 425V315H1080V270H1097V315H1120V425Z" />
+        <path d="M1135 425V285H1178V425Z" />
+        <path d="M1190 425V325H1240V280H1256V325H1280V425Z" />
+        <path d="M1290 425V270H1330V425Z" />
+        <path d="M1340 425V305H1385V260H1400V305H1425V425Z" />
+        <path d="M1435 425V320H1480V285H1497V320H1520V425Z" />
+        <path d="M1530 425V275H1570V245H1585V275H1600V425Z" />
+      </g>
+
+      <g clip-path="url(#distantCityClip)">
+        <rect x="0" y="230" width="1600" height="195" fill="url(#cityWindows)" opacity=".88" />
+        <rect x="0" y="230" width="1600" height="195" fill="#292344" opacity=".12" />
+      </g>
+
+      <g fill="none" stroke="#b79ab9" stroke-width="1.5" opacity=".3">
+        <path d="M45 300V425 M118 345V425 M185 285V425
+                 M280 330V425 M377 305V425 M425 260V425
+                 M530 330V425 M620 270V425 M680 320V425
+                 M780 300V425 M827 270V425 M920 325V425
+                 M1020 295V425 M1080 315V425 M1178 285V425
+                 M1240 325V425 M1330 270V425 M1385 305V425
+                 M1480 320V425 M1570 275V425" />
+      </g>
+    </g>
+
+    <g id="academy-side-wings">
+      <path d="M0 350 H405 V670 H0 Z" fill="#443760" />
+      <path d="M0 350 H405 V670 H0 Z" fill="url(#nearWindows)" opacity=".48" />
+      <path d="M0 350 H405 V360 H0 Z" fill="#e9bd9d" opacity=".22" />
+
+      <path d="M0 350 L175 300 L405 350 Z" fill="url(#roof)" />
+      <path d="M0 350 L175 300 L405 350" fill="none" stroke="#d6a8a5" stroke-width="2" opacity=".35" />
+
+      <path d="M1195 350 H1600 V670 H1195 Z" fill="#443760" />
+      <path d="M1195 350 H1600 V670 H1195 Z" fill="url(#nearWindows)" opacity=".48" />
+      <path d="M1195 350 H1600 V360 H1195 Z" fill="#e9bd9d" opacity=".22" />
+
+      <path d="M1195 350 L1425 300 L1600 350 Z" fill="url(#roof)" />
+      <path d="M1195 350 L1425 300 L1600 350" fill="none" stroke="#d6a8a5" stroke-width="2" opacity=".35" />
+    </g>
+
+    <g>
+      <path d="M365 252L800 100L1235 252Z" fill="#211c3a" />
+      <path d="M393 252L800 118L1207 252Z" fill="#403456" />
+      <path d="M365 252H1235V270H365Z" fill="#8c6b8d" opacity=".75" />
+      <path d="M390 252H1210" stroke="#ffd5a5" stroke-width="3" opacity=".55" />
+
+      <rect x="405" y="265" width="790" height="405" fill="url(#stone)" />
+      <rect x="405" y="265" width="790" height="405" fill="url(#nearWindows)" opacity=".15" />
+
+      <g stroke="#17152d" stroke-width="8" opacity=".8">
+        <path d="M530 265V670" />
+        <path d="M650 265V670" />
+        <path d="M950 265V670" />
+        <path d="M1070 265V670" />
+      </g>
+      <g stroke="#867096" stroke-width="2" opacity=".38">
+        <path d="M535 270V670 M655 270V670 M945 270V670 M1065 270V670" />
+      </g>
+
+      <rect x="395" y="263" width="810" height="12" fill="#8a7090" />
+      <rect x="395" y="263" width="810" height="3" fill="#ffe0b0" opacity=".55" />
+
+      <g id="stained-glass-windows">
+        <g fill="url(#glass)">
+          <path d="M455 500V355Q455 315 495 300Q535 315 535 355V500Z" />
+          <path d="M565 500V355Q565 315 605 300Q645 315 645 355V500Z" />
+          <path d="M955 500V355Q955 315 995 300Q1035 315 1035 355V500Z" />
+          <path d="M1065 500V355Q1065 315 1105 300Q1145 315 1145 355V500Z" />
+        </g>
+
+        <g fill="none" stroke="#19152f" stroke-width="9" stroke-linejoin="round">
+          <path d="M455 500V355Q455 315 495 300Q535 315 535 355V500Z" />
+          <path d="M565 500V355Q565 315 605 300Q645 315 645 355V500Z" />
+          <path d="M955 500V355Q955 315 995 300Q1035 315 1035 355V500Z" />
+          <path d="M1065 500V355Q1065 315 1105 300Q1145 315 1145 355V500Z" />
+        </g>
+
+        <g fill="none" stroke="#19152f" stroke-width="5" stroke-linecap="square">
+          <path d="M495 307V497" />
+          <path d="M605 307V497" />
+          <path d="M995 307V497" />
+          <path d="M1105 307V497" />
+
+          <path d="M459 413H531" />
+          <path d="M569 413H641" />
+          <path d="M959 413H1031" />
+          <path d="M1069 413H1141" />
+        </g>
+
+        <g fill="#fff0c8" opacity=".24">
+          <path d="M467 355Q471 326 490 314V490H467Z" />
+          <path d="M577 355Q581 326 600 314V490H577Z" />
+          <path d="M967 355Q971 326 990 314V490H967Z" />
+          <path d="M1077 355Q1081 326 1100 314V490H1077Z" />
+        </g>
+      </g>
+
+      <rect x="730" y="80" width="140" height="205" fill="#3b3158" />
+      <rect x="742" y="95" width="116" height="175" fill="#50416d" />
+      <path d="M710 83L800 0L890 83Z" fill="#19162f" />
+      <path d="M731 82L800 19L869 82Z" fill="#3b3158" />
+      <path d="M800 18V82" stroke="#8e7190" stroke-width="2" opacity=".5" />
+      <rect x="730" y="80" width="140" height="8" fill="#a27b98" opacity=".6" />
+
+      <circle cx="800" cy="145" r="42" fill="#211b37" stroke="#d6b18f" stroke-width="5" />
+      <circle cx="800" cy="145" r="34" fill="#ffe2b0" />
+      <circle cx="800" cy="145" r="29" fill="#f8d7a9" />
+      <g stroke="#473450" stroke-width="2" opacity=".7">
+        <path d="M800 120V125 M800 165V170 M775 145H780 M820 145H825" />
+      </g>
+      <path d="M800 145V124 M800 145L817 154" stroke="#342641" stroke-width="4" stroke-linecap="round" />
+      <circle cx="800" cy="145" r="4" fill="#342641" />
+      <circle cx="800" cy="145" r="60" fill="#ffd9a0" opacity=".09" filter="url(#smallGlow)" />
+
+      <path d="M772 278V238Q772 203 800 188Q828 203 828 238V278Z" fill="#17142a" />
+      <path d="M783 278V239Q783 213 800 204Q817 213 817 239V278Z" fill="#ffd9a0" opacity=".62" />
+
+      <path d="M718 670V598Q718 548 800 515Q882 548 882 598V670Z" fill="#171329" />
+      <path d="M738 670V601Q738 563 800 537Q862 563 862 601V670Z" fill="#ffd6a1" opacity=".26" />
+      <path d="M756 670V608Q756 575 800 558Q844 575 844 608V670Z" fill="#151126" />
+      <path d="M772 670V615Q772 589 800 579Q828 589 828 615V670Z" fill="#f7c99c" opacity=".18" />
+      <path d="M718 598Q718 548 800 515Q882 548 882 598" fill="none" stroke="#a17b98" stroke-width="7" />
+      <path d="M738 601Q738 563 800 537Q862 563 862 601" fill="none" stroke="#e8bd9b" stroke-width="2" opacity=".65" />
+
+      <rect x="680" y="666" width="240" height="14" fill="#5d4a70" />
+      <rect x="660" y="680" width="280" height="14" fill="#4e4064" />
+      <rect x="640" y="694" width="320" height="14" fill="#443755" />
+      <rect x="620" y="708" width="360" height="14" fill="#392e4b" />
+      <rect x="600" y="722" width="400" height="14" fill="#302740" />
+      <g stroke="#d7b49a" stroke-width="2" opacity=".35">
+        <path d="M680 666H920 M660 680H940 M640 694H960 M620 708H980 M600 722H1000" />
+      </g>
+
+      <rect x="640" y="477" width="320" height="31" rx="2" fill="#1a152e" />
+      <rect x="640" y="477" width="320" height="3" fill="#e5c29d" opacity=".5" />
+      <text x="800" y="498" font-family="Georgia, 'Times New Roman', serif" font-size="16" fill="#ffe0ae"
+        text-anchor="middle" letter-spacing="4">DELIRIUM ACADEMY</text>
+    </g>
+
+    <rect x="0" y="670" width="1600" height="230" fill="url(#ground)" />
+    <path d="M620 670L980 670L1320 900H280Z" fill="#8d7192" opacity=".08" />
+    <path d="M700 670L900 670L1060 900H540Z" fill="#ffd9a0" opacity=".055" />
+    <g stroke="#d5b2a0" stroke-width="1" opacity=".11">
+      <path d="M0 760H1600" />
+      <path d="M0 795H1600" />
+      <path d="M0 830H1600" />
+      <path d="M0 865H1600" />
+      <path d="M200 670L110 900" />
+      <path d="M420 670L360 900" />
+      <path d="M620 670L610 900" />
+      <path d="M980 670L990 900" />
+      <path d="M1180 670L1240 900" />
+      <path d="M1400 670L1510 900" />
+    </g>
+
+    <path d="M750 744L850 744L920 900H680Z" fill="#e6a4a6" opacity=".08" />
+    <path d="M770 755L830 755L858 810H742Z" fill="#ffd9a0" opacity=".12" />
+    <path d="M785 825H815L834 900H766Z" fill="#ffd9a0" opacity=".08" />
+
+    <g fill="#1a152d">
+      <g transform="translate(65 680)">
+        <path d="M-5 0V-155H5V0Z" />
+        <path
+          d="M0 -220C-57 -215 -84 -180 -76 -143C-104 -115 -69 -79 -31 -91C-15 -68 17 -70 32 -91C76 -78 105 -119 76 -150C91 -188 45 -217 0 -220Z" />
+        <path d="M-50 -163Q-18 -188 2 -153Q30 -192 62 -162Q48 -125 14 -133Q-14 -111 -44 -134Z" fill="#241b3a" />
+      </g>
+      <g transform="translate(1535 680) scale(1.1)">
+        <path d="M-5 0V-155H5V0Z" />
+        <path
+          d="M0 -220C-57 -215 -84 -180 -76 -143C-104 -115 -69 -79 -31 -91C-15 -68 17 -70 32 -91C76 -78 105 -119 76 -150C91 -188 45 -217 0 -220Z" />
+        <path d="M-50 -163Q-18 -188 2 -153Q30 -192 62 -162Q48 -125 14 -133Q-14 -111 -44 -134Z" fill="#241b3a" />
+      </g>
+      <g transform="translate(325 680) scale(.68)">
+        <path d="M-5 0V-155H5V0Z" />
+        <path
+          d="M0 -220C-57 -215 -84 -180 -76 -143C-104 -115 -69 -79 -31 -91C-15 -68 17 -70 32 -91C76 -78 105 -119 76 -150C91 -188 45 -217 0 -220Z" />
+      </g>
+      <g transform="translate(1280 680) scale(.68)">
+        <path d="M-5 0V-155H5V0Z" />
+        <path
+          d="M0 -220C-57 -215 -84 -180 -76 -143C-104 -115 -69 -79 -31 -91C-15 -68 17 -70 32 -91C76 -78 105 -119 76 -150C91 -188 45 -217 0 -220Z" />
+      </g>
+    </g>
+
+    <g>
+      <g transform="translate(520 0)">
+        <rect x="-3" y="563" width="6" height="108" fill="#17132a" />
+        <path d="M-13 570L-8 551H8L13 570Z" fill="#342747" />
+        <circle cx="0" cy="558" r="8" fill="#fff0c8" />
+        <circle cx="0" cy="558" r="30" fill="#ffd9a0" opacity=".16" filter="url(#smallGlow)" />
+        <path d="M-12 671H12L18 678H-18Z" fill="#211a35" />
+      </g>
+      <g transform="translate(1080 0)">
+        <rect x="-3" y="563" width="6" height="108" fill="#17132a" />
+        <path d="M-13 570L-8 551H8L13 570Z" fill="#342747" />
+        <circle cx="0" cy="558" r="8" fill="#fff0c8" />
+        <circle cx="0" cy="558" r="30" fill="#ffd9a0" opacity=".16" filter="url(#smallGlow)" />
+        <path d="M-12 671H12L18 678H-18Z" fill="#211a35" />
+      </g>
+    </g>
+
+    <g fill="#171329">
+      <g transform="translate(560 0)">
+        <circle cx="0" cy="752" r="9" />
+        <path d="M-14 766Q0 752 14 766L18 814H-18Z" />
+        <path d="M-10 814L-13 835H-5L0 814 M5 814L10 835H18L12 814Z" />
+      </g>
+      <g transform="translate(610 0)">
+        <circle cx="0" cy="765" r="8" />
+        <path d="M-13 777Q0 765 13 777L16 819H-16Z" />
+        <path d="M-9 819L-11 838H-3L1 819 M5 819L9 838H16L11 819Z" />
+      </g>
+      <g transform="translate(1010 0)">
+        <circle cx="0" cy="748" r="9" />
+        <path d="M-14 762Q0 748 14 762L18 810H-18Z" />
+        <path d="M-10 810L-13 831H-5L0 810 M5 810L10 831H18L12 810Z" />
+      </g>
+      <g transform="translate(1180 0)">
+        <circle cx="0" cy="770" r="8" />
+        <path d="M-13 782Q0 770 13 782L16 823H-16Z" />
+        <path d="M-9 823L-11 841H-3L1 823 M5 823L9 841H16L11 823Z" />
+      </g>
+      <g transform="translate(260 0)">
+        <circle cx="0" cy="757" r="8" />
+        <path d="M-13 769Q0 757 13 769L16 813H-16Z" />
+        <path d="M-9 813L-11 833H-3L1 813 M5 813L9 833H16L11 813Z" />
+      </g>
+    </g>
+
+    <g fill="#ffe7b5">
+      <circle cx="355" cy="585" r="2.5" opacity=".7" />
+      <circle cx="390" cy="535" r="2" opacity=".55" />
+      <circle cx="1230" cy="565" r="2.5" opacity=".7" />
+      <circle cx="1190" cy="610" r="2" opacity=".55" />
+      <circle cx="690" cy="585" r="2" opacity=".5" />
+      <circle cx="930" cy="570" r="2.5" opacity=".6" />
+      <circle cx="470" cy="705" r="2" opacity=".5" />
+      <circle cx="1130" cy="710" r="2" opacity=".55" />
+    </g>
+
+    <rect width="1600" height="900" fill="url(#vignette)" />
+    <path d="M0 0H1600V12H0Z" fill="#100d20" opacity=".35" />
+    <path d="M0 888H1600V900H0Z" fill="#100d20" opacity=".45" />
+  </g>
+</svg>

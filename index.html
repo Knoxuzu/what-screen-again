@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="What Screen Again? — a visual novel about identity, perception, and the versions of ourselves we choose to show.">
+    <meta name="theme-color" content="#090910">
+
+    <title>What Screen Again? - A Visual Novel</title>
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/title-note.css">
+
+    <script src="js/progress.js" defer></script>
+    <script src="js/acts.js" defer></script>
+    <script src="js/page-transition.js" defer></script>
+    <script src="js/start.js" defer></script>
+    <script src="js/title-note.js" defer></script>
+</head>
+
+<body class="title-page">
+    <main class="title-screen">
+        <div class="title-backdrop" aria-hidden="true"></div>
+        <div class="title-vignette" aria-hidden="true"></div>
+        <div class="title-grain" aria-hidden="true"></div>
+        <div class="title-art" aria-hidden="true">
+            <img src="art/title-scene.svg" alt="">
+        </div>
+
+        <div class="transition-overlay" id="pageTransition" aria-hidden="true" data-transition-state="idle">
+            <div class="transition-scanlines"></div>
+            <div class="transition-flash"></div>
+
+            <div class="transition-message">
+                <span class="transition-message-mark">W/</span>
+                <span class="transition-message-text" id="transitionMessage">PREPARING YOUR STORY</span>
+                <span class="transition-message-line"></span>
+            </div>
+
+            <div class="transition-coordinate">
+                <span>WSA // SYSTEM</span>
+                <span id="transitionStatus">CONNECTION STABLE</span>
+            </div>
+        </div>
+
+        <header class="title-header">
+            <a class="title-brand" href="index.html" aria-label="What Screen Again? Home">
+                <span class="brand-mark" aria-hidden="true">W/</span>
+                <span class="brand-name">WHAT SCREEN AGAIN?</span>
+            </a>
+
+            <span class="title-header-note">AN INTERACTIVE STORY</span>
+        </header>
+
+        <section class="title-content" aria-labelledby="gameTitle">
+            <p class="title-eyebrow">EVERY IMAGE HIDES SOMETHING</p>
+            <h1 class="game-title" id="gameTitle">What Screen<span>Again?</span></h1>
+
+            <p class="title-subtitle">
+                A story about the self we show,
+                <br>
+                and the self we leave unseen.
+            </p>
+
+            <div class="title-divider" aria-hidden="true">
+                <span></span>
+                <span class="divider-symbol">✦</span>
+                <span></span>
+            </div>
+
+            <nav class="title-menu" aria-label="Main menu">
+                <button class="menu-button menu-button-primary" id="startGame" type="button">
+                    <span class="menu-button-label">START GAME</span>
+                    <span class="menu-button-arrow" aria-hidden="true">↗</span>
+                </button>
+
+                <a class="menu-button" href="chapters.html">
+                    <span class="menu-button-label">FRAGMENT ARCHIVE</span>
+                    <span class="menu-button-arrow" aria-hidden="true">→</span>
+                </a>
+
+                <a class="menu-button" href="memory-log.html">
+                    <span class="menu-button-label">MEMORY LOG</span>
+                    <span class="menu-button-arrow" aria-hidden="true">→</span>
+                </a>
+            </nav>
+
+            <p class="continue-hint" id="continueHint">YOUR STORY HAS YET TO BEGIN.</p>
+
+            <dialog class="start-choice" id="startChoice" aria-labelledby="startChoiceTitle">
+                <h2 id="startChoiceTitle">YOUR STORY IS WAITING</h2>
+                <p id="startChoiceText">Pick up where you left off, or begin again from the first memory.</p>
+                <div class="start-choice-actions">
+                    <button class="menu-button menu-button-primary" id="continueStory" type="button">
+                        <span class="menu-button-label">CONTINUE STORY</span>
+                        <span class="menu-button-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="menu-button" id="newStory" type="button">
+                        <span class="menu-button-label">NEW STORY</span>
+                        <span class="menu-button-arrow" aria-hidden="true">↺</span>
+                    </button>
+                    <button class="menu-button" id="cancelStart" type="button">
+                        <span class="menu-button-label">BACK</span>
+                    </button>
+                </div>
+            </dialog>
+
+            <blockquote class="title-quote">
+                “How much of yourself can you change
+                <br>
+                before you become someone else?”
+            </blockquote>
+        </section>
+
+        <aside class="title-note" id="titleNote" aria-label="Your note" hidden>
+            <p class="title-note-label">YOUR NOTE</p>
+            <p class="title-note-text" id="titleNoteText"></p>
+        </aside>
+
+        <footer class="title-footer">
+            <span>WHAT SCREEN AGAIN?</span>
+            <span class="footer-center">A STORY STILL IN PROGRESS</span>
+            <span class="footer-version">VERSION 1.0</span>
+        </footer>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440">
+  <defs>
+    <linearGradient id="chatBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1d1733" />
+      <stop offset="1" stop-color="#100b20" />
+    </linearGradient>
+
+    <linearGradient id="avatarGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e9b9d8" />
+      <stop offset="1" stop-color="#bba5f5" />
+    </linearGradient>
+
+    <linearGradient id="bubbleFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#30254b" />
+      <stop offset="1" stop-color="#251c3c" />
+    </linearGradient>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity=".4" />
+    </filter>
+
+    <clipPath id="cardClip">
+      <rect x="40" y="24" width="560" height="392" rx="22" />
+    </clipPath>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <rect x="40" y="24" width="560" height="392" rx="22" fill="url(#chatBg)" stroke="#b7a0ff" stroke-opacity=".3" />
+
+    <g clip-path="url(#cardClip)">
+      <rect x="41" y="25" width="558" height="84" fill="#211832" fill-opacity=".85" />
+
+      <circle cx="82" cy="65" r="23" fill="#b7a0ff" fill-opacity=".13" />
+      <circle cx="82" cy="65" r="19" fill="url(#avatarGlow)" />
+
+      <circle cx="82" cy="59" r="7" fill="#453451" />
+      <path d="M68 79 Q69 66 82 66 Q95 66 96 79" fill="#453451" />
+
+      <text x="116" y="62" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="600"
+        fill="#f4edf8">Seraphine</text>
+
+      <circle cx="119" cy="80" r="3" fill="#c5a8e8" />
+      <text x="129" y="84" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11"
+        fill="#a99ab9">Private conversation</text>
+
+      <circle cx="554" cy="58" r="2" fill="#b9a9ce" />
+      <circle cx="554" cy="66" r="2" fill="#b9a9ce" />
+      <circle cx="554" cy="74" r="2" fill="#b9a9ce" />
+
+      <path d="M40 109 H600" stroke="#b7a0ff" stroke-opacity=".14" />
+
+      <rect x="263" y="120" width="114" height="22" rx="11" fill="#ffffff" fill-opacity=".035" />
+      <text x="320" y="135" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif"
+        font-size="10" letter-spacing=".8" fill="#82758f">TONIGHT</text>
+
+      <g fill="url(#bubbleFill)" stroke="#c5b0ef" stroke-opacity=".08">
+        <rect x="70" y="153" width="260" height="42" rx="15" />
+        <rect x="70" y="202" width="350" height="42" rx="15" />
+        <rect x="70" y="251" width="112" height="42" rx="15" />
+        <rect x="70" y="300" width="200" height="42" rx="15" />
+        <rect x="70" y="349" width="265" height="42" rx="15" />
+      </g>
+
+      <path d="M70 169 Q70 153 86 153" fill="none" stroke="#d8c1ff" stroke-opacity=".2" />
+
+      <g font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" fill="#eee6f5">
+        <text x="88" y="179">are you coming tonight?</text>
+        <text x="88" y="228">it starts at 7. second row, remember</text>
+        <text x="88" y="277">knox?</text>
+        <text x="88" y="326">it is almost 8</text>
+        <text x="88" y="375">it's okay. never mind.</text>
+      </g>
+
+      <path d="M70 402 H570" stroke="#b7a0ff" stroke-opacity=".12" />
+      <circle cx="79" cy="407" r="2.5" fill="#8c7b9e" />
+      <text x="89" y="411" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10.5"
+        fill="#93869f">Delivered · Not replied</text>
+
+      <text x="570" y="411" text-anchor="end" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10"
+        letter-spacing=".4" fill="#6f627e">LIQUORE</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440">
+  <defs>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3a101e" />
+      <stop offset=".5" stop-color="#210812" />
+      <stop offset="1" stop-color="#10050c" />
+    </linearGradient>
+
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff0c2" />
+      <stop offset=".45" stop-color="#e7c77d" />
+      <stop offset="1" stop-color="#a9803f" />
+    </linearGradient>
+
+    <linearGradient id="titleGlow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e9b9c5" />
+      <stop offset=".5" stop-color="#fff0e8" />
+      <stop offset="1" stop-color="#d99aaa" />
+    </linearGradient>
+
+    <radialGradient id="ambient">
+      <stop offset="0" stop-color="#a71d43" stop-opacity=".22" />
+      <stop offset="1" stop-color="#a71d43" stop-opacity="0" />
+    </radialGradient>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="12" stdDeviation="13" flood-color="#000" flood-opacity=".55" />
+    </filter>
+
+    <filter id="glow" x="-30%" y="-40%" width="160%" height="180%">
+      <feGaussianBlur stdDeviation="5" />
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <rect x="54" y="32" width="532" height="376" rx="5" fill="url(#cardBg)" stroke="#8d593d" stroke-opacity=".65" />
+
+    <rect x="54" y="32" width="532" height="376" rx="5" fill="url(#ambient)" />
+
+    <rect x="70" y="48" width="500" height="344" rx="2" fill="none" stroke="url(#gold)" stroke-width="1.2"
+      stroke-opacity=".8" />
+    <rect x="77" y="55" width="486" height="330" rx="1" fill="none" stroke="#d9b875" stroke-width=".5"
+      stroke-opacity=".4" />
+
+    <g fill="none" stroke="url(#gold)" stroke-width="1.2">
+      <path d="M70 91 V70 H91 M76 88 V76 H88" />
+      <path d="M549 70 H570 V91 M552 76 H564 V88" />
+      <path d="M70 349 V370 H91 M76 352 V364 H88" />
+      <path d="M549 370 H570 V349 M552 364 H564 V352" />
+    </g>
+
+    <g transform="translate(320 77)" fill="none" stroke="url(#gold)">
+      <path d="M-42 0 H-9 M9 0 H42" stroke-width="1" />
+      <path d="M0 -7 C-9 -2 -9 2 0 7 C9 2 9 -2 0 -7Z" stroke-width="1.1" />
+      <circle cx="0" cy="0" r="2" fill="#e7c77d" stroke="none" />
+      <path d="M-25 -4 L-21 0 L-25 4 M25 -4 L21 0 L25 4" stroke-width=".8" />
+    </g>
+
+    <text x="320" y="111" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#d9b875"
+      text-anchor="middle" letter-spacing="5">
+      THE CRIMSON LIST
+    </text>
+
+    <text x="320" y="190" font-family="Georgia, 'Times New Roman', serif" font-size="53" font-style="italic"
+      fill="#ff456f" text-anchor="middle" opacity=".55" filter="url(#glow)">
+      you're invited
+    </text>
+
+    <text x="320" y="190" font-family="Georgia, 'Times New Roman', serif" font-size="49" font-style="italic"
+      fill="url(#titleGlow)" text-anchor="middle" letter-spacing="-1">
+      you're invited
+    </text>
+
+    <g transform="translate(320 216)">
+      <path d="M-94 0 H-12 M12 0 H94" stroke="#bd9253" stroke-width=".8" opacity=".85" />
+      <path d="M0 -5 L5 0 L0 5 L-5 0 Z" fill="none" stroke="url(#gold)" stroke-width="1" />
+      <circle cx="0" cy="0" r="1.4" fill="#f7d78d" />
+    </g>
+
+    <text x="320" y="250" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#e4c7c9" text-anchor="middle"
+      letter-spacing="2.2">
+      AFTER HOURS
+    </text>
+
+    <text x="320" y="273" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#f0d9d8"
+      text-anchor="middle">
+      The Crimson Lounge · Liktoren
+    </text>
+
+    <path d="M246 294 H394" stroke="url(#gold)" stroke-width=".8" opacity=".75" />
+
+    <text x="320" y="322" font-family="Georgia, 'Times New Roman', serif" font-size="19" font-style="italic"
+      fill="#f7d78d" text-anchor="middle">
+      Come as you are.
+    </text>
+
+    <text x="320" y="345" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#bd9a9f" text-anchor="middle"
+      letter-spacing=".4">
+      We will take care of the rest.
+    </text>
+
+    <text x="530" y="369" font-family="Georgia, 'Times New Roman', serif" font-size="20" font-style="italic"
+      fill="#e7c77d" text-anchor="end">
+      V.I.
+    </text>
+
+    <g transform="translate(110 369)" fill="none" stroke="url(#gold)" stroke-width=".8" opacity=".7">
+      <path d="M-20 0 H-5 M5 0 H20" />
+      <path d="M0 -4 L4 0 L0 4 L-4 0Z" />
+    </g>
+  </g>
+</svg>

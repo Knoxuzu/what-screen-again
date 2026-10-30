@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#070d20" />
+      <stop offset="42%" stop-color="#111a35" />
+      <stop offset="72%" stop-color="#1a2545" />
+      <stop offset="100%" stop-color="#27304f" />
+    </linearGradient>
+
+    <linearGradient id="horizonGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#354263" stop-opacity="0" />
+      <stop offset="100%" stop-color="#354263" stop-opacity=".25" />
+    </linearGradient>
+
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#202635" />
+      <stop offset="100%" stop-color="#0c111d" />
+    </linearGradient>
+
+    <linearGradient id="sidewalk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#626779" />
+      <stop offset="100%" stop-color="#34394b" />
+    </linearGradient>
+
+    <pattern id="warmWindows" width="35" height="42" patternUnits="userSpaceOnUse">
+      <rect x="7" y="8" width="11" height="17" rx="1" fill="#ffd477" opacity=".95" />
+    </pattern>
+
+    <pattern id="coolWindows" width="38" height="45" patternUnits="userSpaceOnUse">
+      <rect x="8" y="8" width="12" height="18" rx="1" fill="#9bbdff" opacity=".8" />
+    </pattern>
+
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="16" />
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)" />
+  <rect y="390" width="1600" height="210" fill="url(#horizonGlow)" />
+
+  <ellipse cx="790" cy="455" rx="310" ry="105" fill="#6476a7" opacity=".12" filter="url(#softGlow)" />
+  <circle cx="790" cy="455" r="48" fill="#b5c5e8" opacity=".12" />
+  <circle cx="790" cy="455" r="68" fill="#8097ca" opacity=".1" filter="url(#softGlow)" />
+
+  <g fill="#202b48" opacity=".8">
+    <path d="M65 165
+             Q85 142 119 153
+             Q141 119 183 138
+             Q207 115 241 139
+             Q276 132 294 158
+             Q320 163 327 182
+             L327 192 L65 192Z" />
+    <path d="M470 220
+             Q496 198 529 210
+             Q552 176 593 196
+             Q621 177 651 201
+             Q683 193 704 218
+             L704 229 L470 229Z" />
+    <path d="M1040 142
+             Q1062 121 1094 135
+             Q1116 101 1156 123
+             Q1185 103 1217 129
+             Q1251 121 1273 145
+             Q1300 149 1309 169
+             L1309 179 L1040 179Z" />
+    <path d="M1330 295
+             Q1353 274 1381 286
+             Q1404 258 1440 278
+             Q1467 261 1495 284
+             Q1528 276 1546 298
+             L1546 308 L1330 308Z" />
+  </g>
+  <g fill="#3a4766" opacity=".4">
+    <path d="M88 174 Q135 155 176 171 T260 170 L260 176 L88 176Z" />
+    <path d="M505 218 Q548 201 588 215 T672 214 L672 220 L505 220Z" />
+    <path d="M1075 151 Q1121 132 1161 148 T1250 146 L1250 152 L1075 152Z" />
+  </g>
+
+  <g fill="#171c31">
+    <path d="M0 510 V420 H65 V386 H110 V435 H155 V399 H210 V460 H258 V410 H315 V510Z" />
+    <path d="M300 510 V445 H350 V365 H405 V445 H430 V398 H478 V510Z" />
+    <path d="M470 510 V430 H520 V390 H570 V430 H610 V350 H665 V510Z" />
+    <path d="M650 510 V425 H700 V390 H750 V425 H790 V370 H835 V510Z" />
+    <path d="M820 510 V445 H870 V395 H920 V445 H960 V410 H1010 V510Z" />
+    <path d="M1000 510 V430 H1055 V365 H1105 V430 H1140 V395 H1190 V510Z" />
+    <path d="M1180 510 V440 H1230 V385 H1280 V440 H1320 V350 H1375 V510Z" />
+    <path d="M1360 510 V415 H1410 V375 H1460 V430 H1500 V395 H1550 V440 H1600 V510Z" />
+  </g>
+
+  <g stroke="#10172a" stroke-width="2">
+    <rect x="35" y="345" width="190" height="205" fill="#20283e" />
+    <rect x="49" y="362" width="162" height="188" fill="url(#warmWindows)" opacity=".75" />
+    <rect x="35" y="345" width="190" height="18" fill="#303a55" />
+    <rect x="60" y="326" width="12" height="19" fill="#20283e" />
+    <rect x="182" y="330" width="9" height="15" fill="#20283e" />
+
+    <rect x="250" y="275" width="145" height="275" fill="#161f36" />
+    <rect x="262" y="290" width="121" height="260" fill="url(#coolWindows)" opacity=".8" />
+    <rect x="250" y="275" width="145" height="14" fill="#2b3550" />
+    <path d="M320 275 V246 H328 V275" fill="#161f36" />
+
+    <rect x="410" y="400" width="140" height="150" fill="#24263d" />
+    <rect x="422" y="412" width="116" height="138" fill="url(#warmWindows)" opacity=".75" />
+    <rect x="410" y="400" width="140" height="12" fill="#35344f" />
+
+    <rect x="570" y="300" width="175" height="250" fill="#1d243a" />
+    <rect x="584" y="317" width="147" height="233" fill="url(#warmWindows)" opacity=".7" />
+    <rect x="570" y="300" width="175" height="17" fill="#303750" />
+    <rect x="622" y="274" width="65" height="26" fill="#1d243a" />
+    <rect x="646" y="252" width="14" height="22" fill="#1d243a" />
+
+    <rect x="760" y="385" width="110" height="165" fill="#24243b" />
+    <rect x="770" y="397" width="90" height="153" fill="url(#coolWindows)" opacity=".75" />
+    <rect x="760" y="385" width="110" height="12" fill="#35334e" />
+
+    <rect x="890" y="285" width="170" height="265" fill="#171f35" />
+    <rect x="904" y="301" width="142" height="249" fill="url(#warmWindows)" opacity=".8" />
+    <rect x="890" y="285" width="170" height="16" fill="#2d3550" />
+
+    <rect x="1075" y="365" width="145" height="185" fill="#22263d" />
+    <rect x="1087" y="379" width="121" height="171" fill="url(#coolWindows)" opacity=".8" />
+    <rect x="1075" y="365" width="145" height="14" fill="#33344e" />
+
+    <rect x="1240" y="260" width="175" height="290" fill="#161e34" />
+    <rect x="1254" y="277" width="147" height="273" fill="url(#warmWindows)" opacity=".75" />
+    <rect x="1240" y="260" width="175" height="17" fill="#2b344e" />
+    <rect x="1280" y="237" width="95" height="23" fill="#161e34" />
+
+    <rect x="1435" y="350" width="165" height="200" fill="#22263c" />
+    <rect x="1448" y="364" width="139" height="186" fill="url(#warmWindows)" opacity=".75" />
+    <rect x="1435" y="350" width="165" height="14" fill="#33334d" />
+  </g>
+
+  <path d="M0 525 H1600 V555 H0Z" fill="#141b2e" />
+
+  <g>
+    <rect x="0" y="443" width="1600" height="62" fill="#34394f" />
+    <rect x="0" y="443" width="1600" height="9" fill="#626a84" />
+    <rect x="0" y="496" width="1600" height="9" fill="#171d2e" />
+    <rect x="0" y="458" width="1600" height="3" fill="#4a526d" opacity=".8" />
+
+    <g fill="#171e31">
+      <rect x="45" y="390" width="12" height="53" />
+      <rect x="130" y="390" width="12" height="53" />
+      <rect x="215" y="390" width="12" height="53" />
+      <rect x="300" y="390" width="12" height="53" />
+      <rect x="385" y="390" width="12" height="53" />
+      <rect x="470" y="390" width="12" height="53" />
+      <rect x="555" y="390" width="12" height="53" />
+      <rect x="640" y="390" width="12" height="53" />
+      <rect x="725" y="390" width="12" height="53" />
+      <rect x="810" y="390" width="12" height="53" />
+      <rect x="895" y="390" width="12" height="53" />
+      <rect x="980" y="390" width="12" height="53" />
+      <rect x="1065" y="390" width="12" height="53" />
+      <rect x="1150" y="390" width="12" height="53" />
+      <rect x="1235" y="390" width="12" height="53" />
+      <rect x="1320" y="390" width="12" height="53" />
+      <rect x="1405" y="390" width="12" height="53" />
+      <rect x="1490" y="390" width="12" height="53" />
+      <rect x="1575" y="390" width="12" height="53" />
+    </g>
+    <rect x="0" y="390" width="1600" height="8" fill="#747b95" />
+    <rect x="0" y="421" width="1600" height="6" fill="#646b84" />
+  </g>
+
+  <rect x="0" y="505" width="1600" height="105" fill="#141927" />
+  <rect x="0" y="505" width="1600" height="8" fill="#30364a" />
+  <g fill="#202538">
+    <path d="M90 513 H110 V610 H90Z" />
+    <path d="M490 513 H510 V610 H490Z" />
+    <path d="M890 513 H910 V610 H890Z" />
+    <path d="M1290 513 H1310 V610 H1290Z" />
+  </g>
+
+  <rect x="0" y="610" width="1600" height="90" fill="url(#sidewalk)" />
+  <rect x="0" y="610" width="1600" height="7" fill="#85899c" />
+  <rect x="0" y="690" width="1600" height="10" fill="#292e40" />
+
+  <g stroke="#4c5267" stroke-width="2" opacity=".7">
+    <path d="M90 620 V690 M240 620 V690 M390 620 V690 M540 620 V690
+             M690 620 V690 M840 620 V690 M990 620 V690 M1140 620 V690
+             M1290 620 V690 M1440 620 V690" />
+    <path d="M0 654 H1600" opacity=".4" />
+  </g>
+
+  <rect x="0" y="700" width="1600" height="200" fill="url(#road)" />
+  <rect x="0" y="700" width="1600" height="5" fill="#626a80" />
+  <rect x="0" y="895" width="1600" height="5" fill="#090d16" />
+
+  <g fill="#aeb9d2" opacity=".55">
+    <rect x="55" y="790" width="105" height="7" rx="2" />
+    <rect x="235" y="790" width="105" height="7" rx="2" />
+    <rect x="415" y="790" width="105" height="7" rx="2" />
+    <rect x="595" y="790" width="105" height="7" rx="2" />
+    <rect x="775" y="790" width="105" height="7" rx="2" />
+    <rect x="955" y="790" width="105" height="7" rx="2" />
+    <rect x="1135" y="790" width="105" height="7" rx="2" />
+    <rect x="1315" y="790" width="105" height="7" rx="2" />
+    <rect x="1495" y="790" width="70" height="7" rx="2" />
+  </g>
+
+  <rect width="1600" height="900" fill="#080f25" opacity=".08" />
+</svg>

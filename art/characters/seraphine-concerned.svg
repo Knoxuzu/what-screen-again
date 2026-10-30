@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 440" role="img"
+      aria-label="Seraphine Austin character silhouette">
+
+      <defs>
+            <linearGradient id="seraOutfit" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#3b203a" />
+                  <stop offset="1" stop-color="#100f1b" />
+            </linearGradient>
+
+            <linearGradient id="seraFace" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#382a37" />
+                  <stop offset="1" stop-color="#1c1724" />
+            </linearGradient>
+      </defs>
+
+      <path d="M103 145
+           Q103 80 170 75
+           Q237 80 237 145
+           L240 310
+           L252 440 H88
+           L100 310 Z" fill="#b987a6" />
+
+      <path d="M102 304
+           L78 315
+           Q48 328 42 362
+           L31 440 H309
+           L298 362
+           Q292 328 262 315
+           L238 304 Z" fill="url(#seraOutfit)" />
+
+      <path d="M143 251 L143 301
+           Q170 326 197 301
+           L197 251 Z" fill="#211722" />
+
+      <path d="M143 298
+           L170 322
+           L197 298
+           L205 440 H135 Z" fill="#492640" />
+
+      <path d="M102 304
+           L133 293
+           L170 327
+           L207 293
+           L238 304
+           L262 315
+           Q292 328 298 362
+           L309 440 H31
+           L42 362
+           Q48 328 78 315 Z" fill="url(#seraOutfit)" />
+
+      <path d="M133 294
+           L170 327
+           L207 294
+           L215 342
+           L170 374
+           L125 342 Z" fill="#241626" />
+
+      <path d="M133 294 L170 327 L207 294" fill="none" stroke="#68405e" stroke-width="3" stroke-linecap="round"
+            stroke-linejoin="round" />
+
+      <path d="M139 277
+           Q170 285 201 277
+           L199 287
+           Q170 295 141 287 Z" fill="#100f1b" />
+
+      <path d="M170 282
+           L175 287
+           L170 292
+           L165 287 Z" fill="#f0b7d0" />
+
+      <path d="M47 410 L83 414
+           M293 410 L257 414" fill="none" stroke="#744365" stroke-width="2" stroke-linecap="round" opacity=".65" />
+
+      <path d="M108 151
+           Q108 112 140 103
+           Q170 93 200 104
+           Q232 115 232 151
+           L228 204
+           Q224 238 201 254
+           Q186 266 170 267
+           Q153 264 138 253
+           Q115 235 111 204 Z" fill="url(#seraFace)" />
+
+      <path d="M111 176
+           Q96 169 99 190
+           Q101 204 113 205 Z" fill="#29202c" />
+
+      <path d="M229 176
+           Q244 169 241 190
+           Q239 204 227 205 Z" fill="#29202c" />
+
+      <path d="M103 180
+           Q91 153 101 126
+           Q112 94 143 86
+           Q170 77 197 86
+           Q229 96 239 126
+           Q247 153 235 180
+           L226 185
+           L222 157
+           Q201 136 170 135
+           Q139 136 118 157
+           L114 185 Z" fill="#b987a6" />
+
+      <path d="M106 145
+           Q116 125 130 116
+           Q119 151 119 184
+           L117 222
+           Q117 242 126 260
+           L110 247
+           Q101 228 102 200 Z" fill="#b987a6" />
+
+      <path d="M234 145
+           Q224 125 210 116
+           Q221 151 221 184
+           L223 222
+           Q223 242 214 260
+           L230 247
+           Q239 228 238 200 Z" fill="#b987a6" />
+
+      <path d="M102 157
+           Q119 126 145 116
+           Q170 106 194 121
+           Q217 134 231 157
+           Q212 147 195 151
+           Q178 155 161 166
+           Q139 181 118 179
+           Q133 159 139 139
+           Q119 145 102 162 Z" fill="#b987a6" />
+
+      <g fill="none" stroke="#f0b7d0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M126 174 Q137 168 148 178" />
+            <path d="M190 178 Q201 168 212 174" />
+      </g>
+
+      <g fill="none" stroke="#f0b7d0" stroke-width="2.5" stroke-linecap="round">
+            <path d="M126 185 Q137 180 148 185" />
+            <path d="M190 185 Q201 180 212 185" />
+      </g>
+
+      <path d="M163 232 Q170 225 177 232" fill="none" stroke="#c18da8" stroke-width="2.2" stroke-linecap="round" />
+
+      <circle cx="120" cy="205" r="2.2" fill="#f0b7d0" />
+      <circle cx="220" cy="205" r="2.2" fill="#f0b7d0" />
+
+</svg>

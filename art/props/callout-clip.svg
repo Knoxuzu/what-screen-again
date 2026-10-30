@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b1531" />
+      <stop offset="1" stop-color="#100c20" />
+    </linearGradient>
+
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c4a8ff" />
+      <stop offset="1" stop-color="#e9afd4" />
+    </linearGradient>
+
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity=".35" />
+    </filter>
+
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="2.2" />
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <rect x="30" y="20" width="580" height="400" rx="20" fill="url(#bg)" stroke="#b7a0ff" stroke-opacity=".28" />
+
+    <text x="58" y="61" fill="#f1edf5" font-family="Segoe UI, Arial, sans-serif" font-size="23"
+      font-weight="700">Notifications</text>
+
+    <rect x="507" y="39" width="74" height="27" rx="13.5" fill="#34254d" stroke="#b7a0ff" stroke-opacity=".25" />
+    <circle cx="521" cy="52.5" r="3.5" fill="#e9afd4" />
+    <text x="531" y="57" fill="#e4d7f2" font-family="Segoe UI, Arial, sans-serif" font-size="10">3 NEW</text>
+
+    <text x="58" y="88" fill="#82788f" font-family="Segoe UI, Arial, sans-serif" font-size="11">Your activity, all in
+      one place</text>
+
+    <text x="58" y="119" fill="#e9afd4" font-family="Segoe UI, Arial, sans-serif" font-size="12"
+      font-weight="600">All</text>
+    <rect x="57" y="130" width="25" height="2.5" rx="1.25" fill="url(#accent)" />
+
+    <text x="105" y="119" fill="#82788f" font-family="Segoe UI, Arial, sans-serif" font-size="12">Mentions</text>
+    <text x="190" y="119" fill="#82788f" font-family="Segoe UI, Arial, sans-serif" font-size="12">Reposts</text>
+
+    <path d="M50 145 H590" stroke="#ffffff" stroke-opacity=".08" />
+
+    <rect x="48" y="157" width="544" height="76" rx="12" fill="#28203f" stroke="#c4a8ff" stroke-opacity=".16" />
+
+    <circle cx="75" cy="184" r="17" fill="#44335f" />
+    <circle cx="75" cy="184" r="7" fill="#bda1ef" opacity=".8" />
+    <circle cx="75" cy="184" r="11" fill="none" stroke="#bda1ef" stroke-opacity=".35" />
+
+    <circle cx="99" cy="170" r="4" fill="#e9afd4" />
+
+    <text x="105" y="179" fill="#e9e1f0" font-family="Segoe UI, Arial, sans-serif" font-size="12"
+      font-weight="600">Someone reposted your post</text>
+    <text x="105" y="197" fill="#a59ab7" font-family="Segoe UI, Arial, sans-serif" font-size="11">Your post is getting
+      some attention...</text>
+    <text x="105" y="216" fill="#6e6384" font-family="Segoe UI, Arial, sans-serif" font-size="10">4 min ago</text>
+
+    <rect x="450" y="190" width="119" height="25" rx="6" fill="#171228" stroke="#ffffff" stroke-opacity=".07" />
+    <rect x="459" y="197" width="65" height="5" rx="2.5" fill="#75688b" opacity=".65" filter="url(#blur)" />
+    <rect x="459" y="206" width="91" height="4" rx="2" fill="#55496b" opacity=".7" filter="url(#blur)" />
+
+    <rect x="48" y="243" width="544" height="76" rx="12" fill="#1b162f" stroke="#ffffff" stroke-opacity=".055" />
+
+    <circle cx="75" cy="270" r="17" fill="#3b2445" />
+    <path d="M67 269 Q75 260 83 269 Q75 278 67 269Z" fill="#e9afd4" opacity=".8" />
+    <circle cx="75" cy="269" r="3" fill="#3b2445" />
+
+    <text x="105" y="265" fill="#d8d0e3" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">New
+      comment on your post</text>
+    <text x="105" y="284" fill="#8e839f" font-family="Segoe UI, Arial, sans-serif" font-size="11">Someone left a reply
+      for you...</text>
+    <text x="105" y="302" fill="#615675" font-family="Segoe UI, Arial, sans-serif" font-size="10">18 min ago</text>
+
+    <rect x="450" y="276" width="119" height="25" rx="6" fill="#151126" />
+    <rect x="460" y="283" width="75" height="5" rx="2.5" fill="#75688b" opacity=".55" filter="url(#blur)" />
+    <rect x="460" y="292" width="54" height="4" rx="2" fill="#55496b" opacity=".6" filter="url(#blur)" />
+
+    <rect x="48" y="329" width="544" height="65" rx="12" fill="#1b162f" stroke="#ffffff" stroke-opacity=".055" />
+
+    <circle cx="75" cy="361" r="17" fill="#292c4a" />
+    <path d="M68 361 L73 366 L83 355" fill="none" stroke="#c4a8ff" stroke-width="2.2" stroke-linecap="round"
+      stroke-linejoin="round" />
+
+    <text x="105" y="354" fill="#d8d0e3" font-family="Segoe UI, Arial, sans-serif" font-size="12"
+      font-weight="600">You're mentioned in a post</text>
+    <text x="105" y="373" fill="#8e839f" font-family="Segoe UI, Arial, sans-serif" font-size="11">There's a conversation
+      waiting for you...</text>
+    <text x="105" y="387" fill="#615675" font-family="Segoe UI, Arial, sans-serif" font-size="10">1 hr ago</text>
+  </g>
+</svg>

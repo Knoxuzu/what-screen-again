@@ -1,0 +1,75 @@
+.title-note {
+    position: absolute;
+    z-index: 4;
+    right: clamp(22px, 5vw, 84px);
+    bottom: clamp(60px, 12vh, 110px);
+    width: min(300px, 34vw);
+    max-height: 36vh;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 18px;
+    border: 1px solid rgba(183,190,255,.3);
+    border-radius: 4px;
+    background: rgba(10,13,29,.82);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 14px 40px rgba(0,0,0,.45);
+    transform: rotate(1.5deg);
+    animation: note-in .7s ease both
+}
+
+.title-note[hidden] {
+    display:none
+}
+
+.title-note::before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    width: 54px;
+    height: 16px;
+    transform: translateX(-50%) rotate(-3deg);
+    background: rgba(169, 162, 255, .35)
+}
+
+.title-note-label {
+    margin: 0 0 8px;
+    color: var(--title-blue, #8cbaff);
+    font-family: var(--font-interface, monospace);
+    font-size: 9px;
+    letter-spacing: .25em}
+
+.title-note-text {
+    margin:0;overflow-y: auto;
+    color: #d8dbef;
+    font-family: var(--font-display, Georgia, serif);
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1.65;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere
+}
+
+@keyframes note-in{
+    from {
+        opacity: 0;
+        transform: translateY(10px) rotate(1.5deg)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) rotate(1.5deg)
+    }
+}
+
+@media (max-width: 760px) {
+    .title-note {
+        display: none
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .title-note {
+        animation: none
+    }
+}

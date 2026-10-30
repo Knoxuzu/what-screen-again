@@ -1,0 +1,281 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" preserveAspectRatio="xMidYMid slice" role="img"
+      aria-label="Cozy dark room overlooking a rainy neon city at night">
+
+      <defs>
+            <linearGradient id="room" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#17172e" />
+                  <stop offset="1" stop-color="#080b19" />
+            </linearGradient>
+
+            <linearGradient id="sky" x1="0" y1="0" x2=".8" y2="1">
+                  <stop offset="0" stop-color="#252b61" />
+                  <stop offset=".48" stop-color="#745078" />
+                  <stop offset="1" stop-color="#151d40" />
+            </linearGradient>
+
+            <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#94b8ff" stop-opacity=".13" />
+                  <stop offset=".5" stop-color="#f3a9d7" stop-opacity=".04" />
+                  <stop offset="1" stop-color="#729dff" stop-opacity=".2" />
+            </linearGradient>
+
+            <linearGradient id="desk" x1="0" y1="0" x2="0" y2="1">
+                  <stop stop-color="#49314c" />
+                  <stop offset="1" stop-color="#151627" />
+            </linearGradient>
+
+            <linearGradient id="monitor" x1="0" y1="0" x2="1" y2="1">
+                  <stop stop-color="#182c50" />
+                  <stop offset="1" stop-color="#080e20" />
+            </linearGradient>
+
+            <radialGradient id="cityGlow">
+                  <stop stop-color="#f5a9e1" stop-opacity=".8" />
+                  <stop offset="1" stop-color="#8a7aff" stop-opacity="0" />
+            </radialGradient>
+
+            <radialGradient id="lampGlow">
+                  <stop stop-color="#e8a8ff" stop-opacity=".28" />
+                  <stop offset="1" stop-color="#e8a8ff" stop-opacity="0" />
+            </radialGradient>
+
+            <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feGaussianBlur stdDeviation="9" />
+            </filter>
+
+            <filter id="smallGlow" x="-100%" y="-100%" width="300%" height="300%">
+                  <feGaussianBlur stdDeviation="2.5" />
+            </filter>
+
+            <pattern id="windowLights" width="29" height="35" patternUnits="userSpaceOnUse">
+                  <rect x="5" y="7" width="8" height="14" rx="1" fill="#b6c9ff" opacity=".68" />
+                  <rect x="18" y="7" width="6" height="14" rx="1" fill="#e9a8dd" opacity=".48" />
+            </pattern>
+
+            <clipPath id="windowClip">
+                  <rect x="205" y="95" width="620" height="540" rx="3" />
+            </clipPath>
+
+            <g id="rain">
+                  <path d="M0 0 L-7 28" fill="none" stroke="#c6d9ff" stroke-width="1.5" stroke-linecap="round"
+                        opacity=".55" />
+            </g>
+
+            <g id="building">
+                  <rect width="90" height="300" fill="#141a38" />
+                  <rect x="7" y="8" width="76" height="284" fill="url(#windowLights)" opacity=".8" />
+                  <path d="M0 0 H90" fill="none" stroke="#8193df" stroke-opacity=".4" />
+            </g>
+      </defs>
+
+      <rect width="900" height="900" fill="url(#room)" />
+      <ellipse cx="535" cy="400" rx="390" ry="390" fill="url(#lampGlow)" opacity=".7" />
+
+      <path d="M0 0 H900 V95 H0Z" fill="#111426" />
+      <path d="M0 95 H195 V680 H0Z" fill="#17172c" />
+      <path d="M185 95 V680" fill="none" stroke="#4d4268" stroke-width="5" />
+      <path d="M0 680 H900 V900 H0Z" fill="#0a0d1b" />
+
+      <g transform="translate(38 155)">
+            <rect width="110" height="150" fill="#27253f" stroke="#62517d" stroke-width="2" />
+            <rect x="9" y="9" width="92" height="132" fill="#171a32" />
+            <circle cx="57" cy="51" r="27" fill="#65528e" opacity=".8" />
+            <path d="M10 120 L44 65 L66 100 L83 77 L101 120Z" fill="#2b5d82" />
+            <path d="M10 130 H101" fill="none" stroke="#c5a9e7" stroke-opacity=".6" />
+      </g>
+
+      <g transform="translate(51 335)">
+            <rect width="90" height="116" fill="#202039" stroke="#514669" stroke-width="2" />
+            <path d="M45 12 L78 52 L45 94 L12 52Z" fill="none" stroke="#a89aff" stroke-width="2" />
+            <circle cx="45" cy="52" r="17" fill="#7f73c4" opacity=".7" />
+      </g>
+
+      <g clip-path="url(#windowClip)">
+            <rect x="205" y="95" width="620" height="540" fill="url(#sky)" />
+
+            <ellipse cx="545" cy="285" rx="300" ry="180" fill="url(#cityGlow)" opacity=".85" />
+
+            <g fill="#e2dfff">
+                  <circle cx="260" cy="140" r="2" />
+                  <circle cx="335" cy="174" r="1.5" />
+                  <circle cx="423" cy="132" r="1.5" />
+                  <circle cx="516" cy="165" r="2" />
+                  <circle cx="615" cy="126" r="1.5" />
+                  <circle cx="731" cy="180" r="2" />
+                  <circle cx="782" cy="137" r="1.3" />
+                  <circle cx="683" cy="225" r="1.4" />
+            </g>
+
+            <g fill="#262849" opacity=".75">
+                  <path d="M205 445 V340 H245 V375 H275 V320 H310 V445Z" />
+                  <path d="M290 445 V375 H335 V290 H354 V375 H378 V445Z" />
+                  <path d="M690 445 V330 H727 V365 H752 V285 H780 V445Z" />
+                  <path d="M760 445 V370 H790 V325 H825 V445Z" />
+            </g>
+
+            <use href="#building" x="218" y="370" />
+            <rect x="220" y="385" width="88" height="230" fill="url(#windowLights)" />
+
+            <path d="M305 615 V300 L342 245 L378 300 V615Z" fill="#1c2448" />
+            <path d="M320 312 H363 V615 H320Z" fill="url(#windowLights)" />
+            <path d="M342 245 V215" fill="none" stroke="#a9b7ff" stroke-width="3" />
+            <circle cx="342" cy="215" r="6" fill="#b9caff">
+                  <animate attributeName="opacity" values=".4;1;.4" dur="2.8s" repeatCount="indefinite" />
+            </circle>
+
+            <path d="M383 615 V390 L416 345 L450 390 V615Z" fill="#171d3c" />
+            <rect x="393" y="405" width="48" height="200" fill="url(#windowLights)" />
+
+            <path d="M450 615 V315 H515 V615Z" fill="#202443" />
+            <rect x="460" y="330" width="45" height="280" fill="url(#windowLights)" />
+
+            <path d="M515 615 V255 L550 220 L585 255 V615Z" fill="#1c2348" />
+            <rect x="525" y="270" width="50" height="330" fill="url(#windowLights)" />
+            <path d="M550 220 V185" fill="none" stroke="#aebdff" stroke-width="3" />
+            <circle cx="550" cy="185" r="7" fill="#f6c7ee" filter="url(#smallGlow)">
+                  <animate attributeName="opacity" values=".3;1;.5;.9" dur="3.6s" repeatCount="indefinite" />
+            </circle>
+
+            <path d="M592 615 V365 H650 V615Z" fill="#171d3c" />
+            <rect x="601" y="382" width="39" height="215" fill="url(#windowLights)" />
+
+            <path d="M650 615 V310 L681 280 L712 310 V615Z" fill="#222543" />
+            <rect x="659" y="326" width="44" height="280" fill="url(#windowLights)" />
+
+            <path d="M715 615 V405 H760 V615Z" fill="#191e3b" />
+            <rect x="724" y="420" width="28" height="180" fill="url(#windowLights)" />
+
+            <path d="M763 615 V350 H825 V615Z" fill="#171a34" />
+            <rect x="771" y="365" width="45" height="240" fill="url(#windowLights)" />
+
+            <path d="M300 635 L490 430 H540 L720 635Z" fill="#e58fdb" opacity=".12" />
+            <path d="M485 635 L535 430" fill="none" stroke="#e8a9ee" stroke-width="3" opacity=".35" />
+
+            <g>
+                  <use href="#rain" x="250" y="125">
+                        <animateTransform attributeName="transform" type="translate" values="0 -35;0 600" dur="2.7s"
+                              repeatCount="indefinite" />
+                  </use>
+                  <use href="#rain" x="310" y="220">
+                        <animateTransform attributeName="transform" type="translate" values="0 -50;0 600" dur="3.2s"
+                              repeatCount="indefinite" />
+                  </use>
+                  <use href="#rain" x="402" y="100">
+                        <animateTransform attributeName="transform" type="translate" values="0 -60;0 600" dur="2.4s"
+                              repeatCount="indefinite" />
+                  </use>
+                  <use href="#rain" x="477" y="250">
+                        <animateTransform attributeName="transform" type="translate" values="0 -35;0 600" dur="3.5s"
+                              repeatCount="indefinite" />
+                  </use>
+                  <use href="#rain" x="580" y="120">
+                        <animateTransform attributeName="transform" type="translate" values="0 -50;0 600" dur="2.9s"
+                              repeatCount="indefinite" />
+                  </use>
+                  <use href="#rain" x="670" y="180">
+                        <animateTransform attributeName="transform" type="translate" values="0 -40;0 600" dur="3.1s"
+                              repeatCount="indefinite" />
+                  </use>
+                  <use href="#rain" x="755" y="115">
+                        <animateTransform attributeName="transform" type="translate" values="0 -70;0 600" dur="2.6s"
+                              repeatCount="indefinite" />
+                  </use>
+                  <use href="#rain" x="810" y="245">
+                        <animateTransform attributeName="transform" type="translate" values="0 -50;0 600" dur="3.4s"
+                              repeatCount="indefinite" />
+                  </use>
+            </g>
+
+            <rect x="205" y="95" width="620" height="540" fill="url(#glass)" />
+            <path d="M250 100 H400 L280 635 H230Z" fill="#d2c5ff" opacity=".045" />
+      </g>
+
+      <g fill="#0a0c19" stroke="#5c537a" stroke-width="3">
+            <rect x="195" y="85" width="640" height="12" />
+            <rect x="195" y="630" width="640" height="15" />
+            <rect x="195" y="85" width="12" height="560" />
+            <rect x="823" y="85" width="12" height="560" />
+            <rect x="493" y="90" width="8" height="550" />
+            <rect x="195" y="362" width="640" height="7" />
+      </g>
+
+      <path d="M175 645 H855 L825 670 H195Z" fill="#282039" />
+      <path d="M175 645 H855" fill="none" stroke="#a68dd2" stroke-opacity=".5" stroke-width="3" />
+
+      <g transform="translate(230 550)">
+            <path d="M40 90 Q35 45 55 0" fill="none" stroke="#6b9b91" stroke-width="5" />
+            <path d="M45 62 Q0 55 5 20 Q40 20 45 62Z" fill="#447c76" />
+            <path d="M49 45 Q90 42 87 5 Q55 10 49 45Z" fill="#639b91" />
+            <path d="M42 78 Q4 80 10 48 Q38 48 42 78Z" fill="#355f68" />
+            <path d="M22 85 H68 L60 132 H30Z" fill="#4b3652" />
+            <ellipse cx="45" cy="85" rx="23" ry="8" fill="#91648d" />
+      </g>
+
+      <path d="M0 680 L900 650 V900 H0Z" fill="url(#desk)" />
+      <path d="M0 680 L900 650" fill="none" stroke="#8c679c" stroke-width="3" opacity=".65" />
+
+      <ellipse cx="645" cy="715" rx="210" ry="85" fill="#6c91ff" opacity=".13" filter="url(#softGlow)" />
+
+      <g transform="translate(545 545)">
+            <path d="M20 0 H230 Q238 0 238 8 V132 H12 V8 Q12 0 20 0Z" fill="#090c18" stroke="#625b86"
+                  stroke-width="3" />
+            <rect x="22" y="11" width="206" height="108" rx="2" fill="url(#monitor)" />
+
+            <g fill="none" stroke-linecap="round" stroke-width="3">
+                  <path d="M38 29 H102" stroke="#9eafff" />
+                  <path d="M48 42 H174" stroke="#6d94c9" />
+                  <path d="M48 55 H137" stroke="#d39bd5" />
+                  <path d="M38 68 H160" stroke="#718de2" />
+                  <path d="M48 81 H112" stroke="#8bc9d5" />
+                  <path d="M48 94 H183" stroke="#6d94c9" />
+            </g>
+
+            <path d="M102 132 V155 H146 V132Z" fill="#34324e" />
+            <path d="M85 157 H163 L175 165 H73Z" fill="#57506f" />
+
+            <circle cx="120" cy="126" r="2" fill="#93caff">
+                  <animate attributeName="opacity" values=".3;1;.3" dur="2s" repeatCount="indefinite" />
+            </circle>
+      </g>
+
+      <path d="M495 725 L718 720 L758 760 L467 765Z" fill="#121627" stroke="#5d557c" stroke-width="2" />
+      <g fill="none" stroke="#8294cc" stroke-opacity=".45" stroke-width="2">
+            <path d="M510 736 L712 731" />
+            <path d="M504 746 L722 741" />
+            <path d="M496 756 L733 751" />
+      </g>
+
+      <g transform="translate(775 694)">
+            <path d="M0 0 H54 L48 57 Q27 70 7 57Z" fill="#252640" stroke="#8a7da7" stroke-width="2" />
+            <path d="M54 12 Q85 8 69 38 L50 43" fill="none" stroke="#8a7da7" stroke-width="5" />
+            <ellipse cx="27" cy="0" rx="27" ry="8" fill="#524365" />
+            <ellipse cx="27" cy="0" rx="20" ry="4" fill="#151528" />
+
+            <path d="M18 -12 Q8 -26 22 -37" fill="none" stroke="#c1b3e6" stroke-width="2" opacity=".5">
+                  <animate attributeName="opacity" values=".15;.65;.15" dur="4s" repeatCount="indefinite" />
+            </path>
+      </g>
+
+      <path d="M0 825
+           Q160 775 310 830
+           Q490 865 660 820
+           Q790 790 900 840
+           V900 H0Z" fill="#0a0d1c" />
+      <path d="M0 850
+           Q180 812 350 855
+           Q580 900 900 837" fill="none" stroke="#222c52" stroke-width="7" opacity=".6" />
+
+      <g fill="#b7c6ff">
+            <circle cx="180" cy="515" r="2" opacity=".6">
+                  <animate attributeName="cy" values="515;495;515" dur="7s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="470" cy="490" r="1.5" opacity=".5">
+                  <animate attributeName="cy" values="490;475;490" dur="5s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="800" cy="580" r="2" opacity=".4">
+                  <animate attributeName="cy" values="580;560;580" dur="8s" repeatCount="indefinite" />
+            </circle>
+      </g>
+
+      <rect width="900" height="900" fill="#11152a" opacity=".08" />
+</svg>

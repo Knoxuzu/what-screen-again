@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 440" role="img"
+  aria-label="Valeria Infernum minimalist character">
+  <defs>
+    <linearGradient id="valeriaClothes" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#421d35" />
+      <stop offset="1" stop-color="#100f1b" />
+    </linearGradient>
+    <linearGradient id="valeriaHair" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c52b49" />
+      <stop offset="1" stop-color="#941a35" />
+    </linearGradient>
+  </defs>
+
+  <path d="M101 157
+       L101 141
+       Q101 103 135 89
+       Q170 76 205 89
+       Q239 103 239 141
+       L239 275
+       Q239 283 230 283
+       L110 283
+       Q101 283 101 275 Z" fill="url(#valeriaHair)" />
+
+  <path d="M106 140
+       Q106 104 170 100
+       Q234 104 234 140
+       L228 201
+       Q222 239 170 260
+       Q118 239 112 201 Z" fill="#30242d" />
+
+  <path d="M112 157
+       Q141 150 170 160
+       Q199 168 228 153
+       L228 201
+       Q222 237 170 254
+       Q118 237 112 201 Z" fill="#1b1720" />
+
+  <path d="M101 164
+       L101 141
+       Q101 103 135 89
+       Q170 76 205 89
+       Q239 103 239 141
+       L239 164
+       L218 151
+       L198 143
+       L179 154
+       L157 166
+       L135 173
+       L114 173
+       L101 182 Z" fill="url(#valeriaHair)" />
+
+  <path d="M140 245
+       L137 296
+       L170 319
+       L203 296
+       L200 245 Z" fill="#251721" />
+
+  <path d="M35 440
+       L43 365
+       Q47 334 94 307
+       L126 294
+       L214 294
+       L246 307
+       Q293 334 297 365
+       L305 440 Z" fill="url(#valeriaClothes)" />
+
+  <path d="M105 306
+       L137 291
+       L170 329
+       L203 291
+       L235 306
+       L215 357
+       L170 378
+       L125 357 Z" fill="#20172e" />
+
+  <path d="M151 329
+       L170 348
+       L189 329
+       L181 440
+       L159 440 Z" fill="#572039" />
+
+  <g transform="translate(218 319)">
+    <path d="M0 0
+         C-10 -9 -18 1 -8 8
+         C-18 17 -5 23 2 14
+         C13 22 22 10 12 4
+         C20 -7 7 -14 0 0 Z" fill="#e94b68" />
+    <circle cx="2" cy="5" r="3.5" fill="#7e1835" />
+  </g>
+
+  <g fill="#e99ab9">
+    <circle cx="120" cy="205" r="2.5" />
+    <circle cx="220" cy="205" r="2.5" />
+  </g>
+
+  <g fill="none" stroke="#e99ab9" stroke-width="2.8" stroke-linecap="round">
+    <path d="M126 188 Q139 176 152 188" />
+    <path d="M188 188 Q201 176 214 188" />
+  </g>
+
+  <path d="M157 224 Q170 241 183 224" fill="#c18da8" stroke="#c18da8" stroke-width="2.2" stroke-linecap="round"
+    stroke-linejoin="round" />
+
+  <path d="M93 337 L116 365
+       M247 337 L224 365" fill="none" stroke="#e99ab9" stroke-width="2" opacity=".35" />
+</svg>

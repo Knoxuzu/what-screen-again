@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b0812">
+    <meta name="description"
+        content="Look back on your journey through What Screen Again? Every choice leaves a reflection.">
+
+    <title>Reflections | What Screen Again?</title>
+
+    <link rel="stylesheet" href="css/ending.css">
+    <link rel="stylesheet" href="css/title-chrome.css">
+    <link rel="stylesheet" href="css/reflection.css">
+
+    <script src="js/progress.js" defer></script>
+    <script src="js/page-transition.js" defer></script>
+    <script src="js/endings.js" defer></script>
+    <script src="js/ending.js" defer></script>
+    <script src="js/reflection.js" defer></script>
+</head>
+
+<body class="title-page ending-page">
+    <main class="title-screen ending-screen">
+        <div class="title-backdrop" aria-hidden="true"></div>
+        <div class="title-vignette" aria-hidden="true"></div>
+        <div class="title-grain" aria-hidden="true"></div>
+
+        <header class="title-header">
+            <a class="title-brand" href="index.html" aria-label="What Screen Again? Home">
+                <span class="brand-mark" aria-hidden="true">W/</span>
+                <span class="brand-name">WHAT SCREEN AGAIN?</span>
+            </a>
+
+            <span class="title-header-note">AN INTERACTIVE STORY</span>
+        </header>
+
+        <section class="ending-content" aria-labelledby="endingTitle">
+            <div class="ending-marker" aria-hidden="true">
+                <span></span>
+                <span class="marker-symbol">✳</span>
+                <span></span>
+            </div>
+
+            <p class="ending-eyebrow">A MOMENT BETWEEN REFLECTIONS</p>
+            <h1 id="endingTitle">What Remains?</h1>
+            <p class="ending-description">
+                Every screen shows a different version of you.
+                Every choice leaves something behind.
+                What matters is what you choose to carry forward.
+            </p>
+
+            <div class="ending-divider" aria-hidden="true">
+                <span></span>
+                <span class="ending-divider-symbol">✦</span>
+                <span></span>
+            </div>
+
+            <section class="reflection-note" aria-labelledby="reflectionTitle">
+                <p class="reflection-label">PERSONAL RECORD</p>
+                <h2 id="reflectionTitle">Your story, so far.</h2>
+                <p id="reflectionMessage" aria-live="polite">The reflections are waiting to be gathered.</p>
+
+                <div class="ending-records" id="endingRecords" aria-label="Story progress">
+                    <div class="ending-record">
+                        <span class="record-label">CHAPTERS DISCOVERED</span>
+                        <span class="record-value" id="chaptersCompleted">0 / 7</span>
+                    </div>
+
+                    <div class="ending-record">
+                        <span class="record-label">CHOICES RECORDED</span>
+                        <span class="record-value" id="choicesRecorded">0</span>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="personal-reflection" id="personalReflection" aria-labelledby="prTitle" hidden>
+                <p class="reflection-label" data-ending-label>YOUR ENDING</p>
+                <h2 id="prTitle" data-ending-name></h2>
+
+                <div class="pr-tabs" role="tablist" aria-label="Reflection sections">
+                    <button class="pr-tab is-active" role="tab" aria-selected="true" data-tab="read">Your
+                        ending</button>
+                    <button class="pr-tab" role="tab" aria-selected="false" data-tab="bars">Knox's pull</button>
+                    <button class="pr-tab" role="tab" aria-selected="false" data-tab="asks">For you</button>
+                    <button class="pr-tab" role="tab" aria-selected="false" data-tab="notes">Notes</button>
+                </div>
+
+                <div class="pr-panel" data-panel="read">
+                    <p data-ending-read></p>
+                </div>
+                <div class="pr-panel" data-panel="bars" hidden>
+                    <div data-bars></div>
+                    <p class="pr-note">Not a score. It shows what pulled Knox the most, based on your choices.</p>
+                </div>
+                <div class="pr-panel" data-panel="asks" hidden>
+                    <ol class="pr-asks" data-asks></ol>
+                </div>
+                <div class="pr-panel" data-panel="notes" hidden>
+                    <textarea class="pr-journal" data-journal aria-label="Your private reflection notes"
+                        placeholder="Write whatever comes up. It stays on this device."></textarea>
+                    <p class="pr-status" data-journal-status aria-live="polite"></p>
+                </div>
+            </section>
+
+            <div class="ending-actions">
+                <a class="primary-button button-link" href="chapters.html">
+                    RETURN TO THE ARCHIVE
+                    <span aria-hidden="true">→</span>
+                </a>
+
+                <a class="secondary-button button-link" href="index.html">BACK TO THE BEGINNING</a>
+            </div>
+
+            <p class="ending-caption">THERE IS ALWAYS ANOTHER WAY TO SEE YOURSELF.</p>
+        </section>
+
+        <footer class="title-footer">
+            <span>WHAT SCREEN AGAIN?</span>
+            <span class="footer-center">A STORY STILL IN PROGRESS</span>
+            <span class="footer-version">VERSION 1.0</span>
+        </footer>
+    </main>
+</body>
+
+</html>

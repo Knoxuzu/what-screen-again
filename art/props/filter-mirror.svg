@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b1531" />
+      <stop offset="1" stop-color="#0f0b20" />
+    </linearGradient>
+    <linearGradient id="leftBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#493663" />
+      <stop offset="1" stop-color="#241b3b" />
+    </linearGradient>
+    <linearGradient id="rightBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#171b30" />
+      <stop offset="1" stop-color="#0c0b18" />
+    </linearGradient>
+    <linearGradient id="leftPerson" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e9afd4" />
+      <stop offset="1" stop-color="#b49ae7" />
+    </linearGradient>
+    <linearGradient id="rightPerson" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#77708c" />
+      <stop offset="1" stop-color="#39334e" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000" flood-opacity=".4" />
+    </filter>
+    <clipPath id="leftClip">
+      <rect x="30" y="24" width="290" height="392" />
+    </clipPath>
+    <clipPath id="rightClip">
+      <rect x="320" y="24" width="290" height="392" />
+    </clipPath>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <rect x="30" y="24" width="580" height="392" rx="18" fill="url(#bg)" stroke="#b7a0ff" stroke-opacity=".3" />
+
+    <g clip-path="url(#leftClip)">
+      <rect x="30" y="24" width="290" height="392" fill="url(#leftBg)" />
+      <circle cx="175" cy="220" r="112" fill="#d7b6ff" opacity=".07" />
+
+      <path d="M68 416 V380
+        Q68 337 106 320
+        L139 305 L175 326 L211 305 L244 320
+        Q282 337 282 380 V416 Z" fill="url(#leftPerson)" />
+
+      <path d="M151 268 V307
+        L175 326 L199 307 V268 Z" fill="#c5a0df" />
+
+      <circle cx="175" cy="235" r="58" fill="url(#leftPerson)" />
+
+      <path d="M139 305 L151 296 L175 319
+        L199 296 L211 305 L175 343 Z" fill="#a98bd2" />
+      <path d="M151 296 L175 319 L199 296" fill="none" stroke="#f4d7ee" stroke-opacity=".4" stroke-width="2" />
+
+      <path d="M92 143 L95 153 L105 156 L95 159
+        L92 169 L89 159 L79 156 L89 153 Z" fill="#f5eaff" opacity=".8" />
+      <path d="M255 181 L257 188 L264 190 L257 192
+        L255 199 L253 192 L246 190 L253 188 Z" fill="#f5eaff" opacity=".65" />
+      <circle cx="108" cy="255" r="2" fill="#f5eaff" opacity=".7" />
+      <circle cx="246" cy="130" r="2" fill="#f5eaff" opacity=".7" />
+    </g>
+
+    <g clip-path="url(#rightClip)">
+      <rect x="320" y="24" width="290" height="392" fill="url(#rightBg)" />
+
+      <path d="M358 416 V380
+        Q358 337 396 320
+        L429 305 L465 326 L501 305 L534 320
+        Q572 337 572 380 V416 Z" fill="url(#rightPerson)" />
+
+      <path d="M441 268 V307
+        L465 326 L489 307 V268 Z" fill="#514960" />
+
+      <circle cx="465" cy="235" r="58" fill="url(#rightPerson)" />
+
+      <path d="M429 305 L441 296 L465 319
+        L489 296 L501 305 L465 343 Z" fill="#30283f" />
+      <path d="M441 296 L465 319 L489 296" fill="none" stroke="#b6adca" stroke-opacity=".2" stroke-width="2" />
+
+      <circle cx="548" cy="143" r="2" fill="#a2e3e8" opacity=".6" />
+      <circle cx="375" cy="270" r="2" fill="#a2e3e8" opacity=".4" />
+    </g>
+
+    <path d="M320 24 V416" stroke="#e7a4cb" stroke-width="2.5" />
+
+    <rect x="87" y="49" width="176" height="30" rx="15" fill="#21152f" fill-opacity=".75" stroke="#e7a4cb"
+      stroke-opacity=".3" />
+    <circle cx="104" cy="64" r="3" fill="#e7a4cb" />
+    <text x="175" y="69" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#f0c4e2"
+      text-anchor="middle" letter-spacing="2">FILTER ON</text>
+
+    <rect x="377" y="49" width="176" height="30" rx="15" fill="#11111e" fill-opacity=".85" stroke="#a2e3e8"
+      stroke-opacity=".25" />
+    <circle cx="394" cy="64" r="3" fill="#a2e3e8" />
+    <text x="465" y="69" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#a2e3e8"
+      text-anchor="middle" letter-spacing="2">FILTER OFF</text>
+  </g>
+</svg>

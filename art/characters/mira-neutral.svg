@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 440" role="img" aria-label="Mira Solenne character silhouette">
+
+      <defs>
+            <linearGradient id="miraOutfit" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#30413e" />
+                  <stop offset="1" stop-color="#171e22" />
+            </linearGradient>
+
+            <linearGradient id="miraFace" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#302b32" />
+                  <stop offset="1" stop-color="#191b22" />
+            </linearGradient>
+      </defs>
+
+      <path d="M105 143
+           Q103 94 139 82
+           Q170 71 201 82
+           Q237 94 235 143
+           L241 326
+           L251 440 H89
+           L99 326 Z" fill="#638f83" />
+
+      <path d="M102 304
+           L78 315
+           Q48 328 42 362
+           L31 440 H309
+           L298 362
+           Q292 328 262 315
+           L238 304 Z" fill="url(#miraOutfit)" />
+
+      <path d="M143 251 L143 302
+           Q170 326 197 302
+           L197 251 Z" fill="#202a2b" />
+
+      <path d="M143 298
+           L170 322
+           L197 298
+           L205 440 H135 Z" fill="#263734" />
+
+      <path d="M102 304
+           L133 293
+           L170 327
+           L207 293
+           L238 304
+           L262 315
+           Q292 328 298 362
+           L309 440 H31
+           L42 362
+           Q48 328 78 315 Z" fill="url(#miraOutfit)" />
+
+      <path d="M133 294 L170 327 L207 294" fill="none" stroke="#50675f" stroke-width="3" stroke-linecap="round"
+            stroke-linejoin="round" />
+
+      <path d="M47 410 L83 414
+           M293 410 L257 414" fill="none" stroke="#45645b" stroke-width="2" stroke-linecap="round" opacity=".75" />
+
+      <path d="M108 151
+           Q108 112 140 103
+           Q170 93 200 104
+           Q232 115 232 151
+           L228 204
+           Q224 238 201 254
+           Q186 266 170 267
+           Q153 264 138 253
+           Q115 235 111 204 Z" fill="url(#miraFace)" />
+
+      <path d="M111 176
+           Q96 169 99 190
+           Q101 204 113 205 Z" fill="#29262e" />
+
+      <path d="M229 176
+           Q244 169 241 190
+           Q239 204 227 205 Z" fill="#29262e" />
+
+      <path d="M102 176
+           Q91 151 102 126
+           Q111 94 143 87
+           Q175 77 204 91
+           Q233 104 239 135
+           Q244 157 232 178
+           L224 166
+           Q213 143 190 135
+           Q164 126 143 139
+           Q122 150 113 177 Z" fill="#638f83" />
+
+      <path d="M106 143
+           Q115 126 130 119
+           Q119 151 119 183
+           L117 222
+           Q117 241 126 260
+           L110 247
+           Q101 229 102 202 Z" fill="#638f83" />
+
+      <path d="M234 143
+           Q225 126 210 119
+           Q221 151 221 183
+           L223 222
+           Q223 241 214 260
+           L230 247
+           Q239 229 238 202 Z" fill="#638f83" />
+
+      <path d="M103 157
+           Q119 128 145 117
+           Q170 107 194 122
+           Q217 135 231 158
+           Q212 148 195 151
+           Q178 155 161 166
+           Q139 181 118 179
+           Q133 159 139 139
+           Q119 145 103 162 Z" fill="#638f83" />
+
+      <path d="M124 126
+           Q117 150 118 174" fill="none" stroke="#507c70" stroke-width="2" stroke-linecap="round" opacity=".8" />
+
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M126 184 Q137 178 148 184" stroke="#9ce9d8" stroke-width="2.5" />
+            <path d="M190 184 Q201 178 212 184" stroke="#9ce9d8" stroke-width="2.5" />
+      </g>
+
+      <path d="M160 229 Q170 230 180 229" fill="none" stroke="#9ce9d8" stroke-width="2.2" stroke-linecap="round" />
+
+      <path d="M211 133
+           Q220 142 211 151
+           Q202 142 211 133 Z" fill="#9ce9d8" />
+
+</svg>

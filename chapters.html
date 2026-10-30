@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080711">
+    <meta name="description" content="Seven fragments. Seven memories. One broken reality.">
+    <title>Fragments - What Screen Again?</title>
+
+    <link rel="stylesheet" href="css/chapters.css">
+
+    <script src="js/progress.js" defer></script>
+    <script src="js/page-transition.js" defer></script>
+    <script src="js/acts.js" defer></script>
+    <script src="js/toc.js" defer></script>
+</head>
+
+<body class="chapters-page">
+    <main class="fragment-world" id="archiveScreen">
+        <div class="fragment-backdrop" aria-hidden="true">
+            <div class="portal-halo"></div>
+            <div class="portal-ring portal-ring--outer"></div>
+            <div class="portal-ring portal-ring--middle"></div>
+            <div class="portal-ring portal-ring--inner"></div>
+            <div class="portal-grid"></div>
+            <div class="portal-scanline"></div>
+            <div class="portal-noise"></div>
+
+            <svg class="background-geometry" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                    <linearGradient id="geometryGradient" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0%" stop-color="#8d78ff" />
+                        <stop offset="50%" stop-color="#63e9ff" />
+                        <stop offset="100%" stop-color="#8d78ff" />
+                    </linearGradient>
+                </defs>
+
+                <g fill="none" stroke="url(#geometryGradient)" stroke-width="0.8">
+                    <path d="M0 170 L230 80 L370 205 L540 70 L760 190 L970 60 L1200 180" opacity=".22" />
+                    <path d="M0 610 L190 480 L350 690 L550 510 L770 720 L990 490 L1200 640" opacity=".19" />
+                    <path d="M140 0 L230 210 L100 390 L270 570 L190 800" opacity=".13" />
+                    <path d="M1040 0 L930 210 L1080 390 L910 570 L1010 800" opacity=".13" />
+                </g>
+
+                <g fill="#a99bff">
+                    <circle cx="230" cy="80" r="2" />
+                    <circle cx="540" cy="70" r="2" />
+                    <circle cx="970" cy="60" r="2" />
+                    <circle cx="350" cy="690" r="2" />
+                    <circle cx="770" cy="720" r="2" />
+                </g>
+            </svg>
+        </div>
+
+        <div class="world-label world-label--top" aria-hidden="true">
+            <span class="signal-dot"></span>
+            <span>MEMORY ARCHIVE</span>
+            <span class="label-divider">/</span>
+            <span>UNSTABLE</span>
+        </div>
+
+        <div class="world-coordinate" aria-hidden="true">
+            <span>WSA-07</span>
+            <span>REALITY INDEX: UNKNOWN</span>
+        </div>
+
+        <section class="archive-interface" aria-label="Act selection">
+            <div class="archive-introduction">
+                <p class="archive-eyebrow">SEVEN PIECES OF A BROKEN WHOLE</p>
+                <h1 class="archive-title">
+                    WHAT SCREEN
+                    <span>AGAIN?</span>
+                </h1>
+                <p class="archive-subtitle" id="archivePrompt">A memory is waiting to be recovered.</p>
+            </div>
+
+            <div class="archive-progress" aria-live="polite">
+                <div class="archive-progress-heading">
+                    <span id="archiveProgressLabel">MEMORY INTEGRITY</span>
+                    <span id="archiveProgressStatus">01 / 07</span>
+                </div>
+
+                <div class="archive-progress-track" id="archiveProgressTrack" role="progressbar"
+                    aria-label="Recovered acts" aria-valuemin="0" aria-valuemax="7" aria-valuenow="0">
+                    <div class="archive-progress-fill" id="archiveProgressFill"></div>
+                </div>
+            </div>
+
+            <div class="fragment-stage" id="fragmentStage">
+                <div class="fragment-stage-caption fragment-stage-caption--left" aria-hidden="true">
+                    <span class="caption-line"></span>
+                    <span>RECOVERED SIGNALS</span>
+                </div>
+
+                <div class="fragment-stage-caption fragment-stage-caption--right" aria-hidden="true">
+                    <span>THE MISSING PIECE</span>
+                    <span class="caption-line"></span>
+                </div>
+
+                <div class="archive-record-grid" id="chapterList" aria-label="Seven story fragments">
+                    <div class="fragment-loading" role="status">
+                        <span class="loading-glyph" aria-hidden="true">◇</span>
+                        <span>Reconstructing memory...</span>
+                    </div>
+                </div>
+
+                <div class="fragment-core" id="fragmentCore" aria-hidden="true">
+                    <div class="core-ring core-ring--one"></div>
+                    <div class="core-ring core-ring--two"></div>
+                    <div class="core-ring core-ring--three"></div>
+
+                    <svg class="core-symbol" viewBox="0 0 100 100">
+                        <path d="M50 5 L83 25 L93 61 L65 91 L29 84 L7 51 L22 17 Z" fill="none" stroke="currentColor"
+                            stroke-width="1.2" />
+                        <path
+                            d="M50 5 L45 43 L83 25 M45 43 L93 61 M45 43 L29 84 M45 43 L7 51 M45 43 L22 17 M45 43 L65 91"
+                            fill="none" stroke="currentColor" stroke-width=".8" opacity=".7" />
+                        <circle cx="45" cy="43" r="3" fill="currentColor" />
+                    </svg>
+
+                    <span class="core-coordinate core-coordinate--top">0x07</span>
+                    <span class="core-coordinate core-coordinate--bottom">REASSEMBLY POINT</span>
+                </div>
+
+                <div class="assembly-flash" id="assemblyFlash" aria-hidden="true"></div>
+                <div class="fragment-stage-vignette" aria-hidden="true"></div>
+            </div>
+
+            <section class="act-inspector" id="actDetailScreen" aria-live="polite" aria-atomic="true">
+                <div class="inspector-index">
+                    <span class="inspector-index-line"></span>
+                    <span id="actDetailNumber">FRAGMENT 01</span>
+                </div>
+
+                <div class="inspector-copy">
+                    <h2 id="actDetailTitle">Act I</h2>
+                    <p class="inspector-subtitle" id="actDetailSubtitle">THE FIRST MEMORY</p>
+                    <p class="inspector-description" id="actDetailDescription">One piece remains visible. The rest are
+                        lost in the signal.</p>
+                </div>
+
+                <div class="inspector-action">
+                    <span class="inspector-status" id="actDetailStatus">AVAILABLE</span>
+                    <a class="open-act-link" id="openActLink" href="chapters/chapter-1.html">
+                        <span class="open-act-link-text">ENTER FRAGMENT</span>
+                        <span class="open-act-link-arrow" aria-hidden="true">↗</span>
+                    </a>
+                </div>
+            </section>
+
+            <p class="archive-hint" id="archiveHint">SELECT A LIT FRAGMENT TO INSPECT ITS MEMORY</p>
+        </section>
+
+        <nav class="world-controls" aria-label="Archive controls">
+            <a class="world-control" href="index.html" aria-label="Return to title screen">
+                <span aria-hidden="true">↖</span>
+                <span>EXIT ARCHIVE</span>
+            </a>
+
+            <a class="world-control" href="ending.html">
+                <span aria-hidden="true">✦</span>
+                <span>REFLECTIONS</span>
+            </a>
+
+            <button class="world-control world-control--quiet" id="toggleSignal" type="button" aria-pressed="false">
+                <span class="signal-control-icon" aria-hidden="true">◉</span>
+                <span>STABILIZE SIGNAL</span>
+            </button>
+        </nav>
+
+        <div class="transition-overlay" id="pageTransition" aria-hidden="true" data-transition-state="idle">
+            <div class="transition-scanlines"></div>
+            <div class="transition-flash"></div>
+
+            <div class="transition-message">
+                <span class="transition-message-mark">W/</span>
+                <span class="transition-message-text" id="transitionMessage">PREPARING YOUR STORY</span>
+                <span class="transition-message-line"></span>
+            </div>
+
+            <div class="transition-coordinate">
+                <span>WSA // SYSTEM</span>
+                <span id="transitionStatus">CONNECTION STABLE</span>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
