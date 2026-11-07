@@ -7,7 +7,7 @@
     --color-panel-raised: #211b2d;
     --color-text: #f1edf5;
     --color-text-soft: #c2b9ce;
-    --color-muted: #82788f;
+    --color-muted: #aaa1be;
     --color-violet: #b7a0ff;
     --color-violet-bright: #d0bfff;
     --color-violet-deep: #7960b9;
@@ -23,7 +23,7 @@
     --font-body: "Segoe UI", "Helvetica Neue", sans-serif;
     --font-interface: "Consolas", "Courier New", monospace;
 
-    --text-xs: 0.68rem;
+    --text-xs: 0.8rem;
     --text-sm: 0.8rem;
     --text-base: 1rem;
     --text-lg: 1.15rem;
@@ -342,7 +342,7 @@ a:focus-visible {
     .secondary-button {
         min-height: 44px;
         padding: 0.7rem 1rem;
-        font-size: 0.72rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -440,7 +440,7 @@ body:has(.game) {
 
 .game>.title-header .title-header-note {
     color: var(--vn-muted);
-    font-size: 0.62rem;
+    font-size: 0.8rem;
     letter-spacing: 0.17em;
     text-align: right;
 }
@@ -457,7 +457,7 @@ body:has(.game) {
     border: 0;
     background: transparent;
     color: var(--vn-muted);
-    font-size: 0.52rem;
+    font-size: 0.8rem;
     letter-spacing: 0.12em;
     line-height: 1.6;
     text-transform: uppercase;
@@ -569,7 +569,7 @@ body:has(.game) {
     gap: 0.5rem;
     color: rgb(210 198 226 / 58%);
     font-family: var(--font-interface);
-    font-size: 0.55rem;
+    font-size: 0.8rem;
     letter-spacing: 0.2em;
     line-height: 1;
 }
@@ -625,9 +625,7 @@ body:has(.game) {
     overflow: hidden;
     border: 1px solid rgb(196 168 255 / 30%);
     border-radius: 14px;
-    background: linear-gradient(180deg, rgb(28 21 44 / 78%), rgb(12 9 21 / 88%));
-    -webkit-backdrop-filter: blur(16px);
-    backdrop-filter: blur(16px);
+    background: linear-gradient(180deg, rgb(28 21 44 / 92%), rgb(12 9 21 / 95%));
     box-shadow: 0 30px 90px rgb(0 0 0 / 50%), inset 0 1px 0 rgb(255 255 255 / 6%);
     animation: intro-rise 900ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
@@ -642,7 +640,7 @@ body:has(.game) {
     background: rgb(255 255 255 / 3%);
     color: var(--vn-muted);
     font-family: var(--font-interface);
-    font-size: 0.56rem;
+    font-size: 0.8rem;
     letter-spacing: 0.2em;
     line-height: 1;
 }
@@ -685,7 +683,7 @@ body:has(.game) {
 .chapter-complete .eyebrow {
     margin-bottom: 1.1rem;
     color: var(--vn-cyan);
-    font-size: 0.68rem;
+    font-size: 0.8rem;
     letter-spacing: 0.3em;
 }
 
@@ -857,13 +855,11 @@ body:has(.game) {
     padding: 0.65rem 1rem;
     border: 1px solid rgb(208 187 255 / 22%);
     border-radius: 12px;
-    background: rgb(20 15 33 / 84%);
-    -webkit-backdrop-filter: blur(12px);
-    backdrop-filter: blur(12px);
+    background: rgb(20 15 33 / 93%);
     box-shadow: 0 14px 40px rgb(0 0 0 / 40%);
     color: #d3c9e0;
     font-family: var(--font-body);
-    font-size: 0.78rem;
+    font-size: 0.8rem;
     line-height: 1.3;
     white-space: nowrap;
     animation:
@@ -1034,14 +1030,14 @@ body:has(.game) {
 .art-placeholder p {
     color: rgb(210 198 226 / 58%);
     font-family: var(--font-interface);
-    font-size: 0.62rem;
+    font-size: 0.8rem;
     letter-spacing: 0.2em;
     line-height: 1.8;
 }
 
 .art-placeholder .art-placeholder-label {
     color: rgb(162 227 232 / 65%);
-    font-size: 0.55rem;
+    font-size: 0.8rem;
     letter-spacing: 0.22em;
 }
 
@@ -1054,7 +1050,7 @@ body:has(.game) {
 
 .art-placeholder .art-placeholder-image {
     color: rgb(196 168 255 / 62%);
-    font-size: 0.55rem;
+    font-size: 0.8rem;
     letter-spacing: 0.1em;
 }
 
@@ -1072,7 +1068,7 @@ body:has(.game) {
     border: 0;
     background: transparent;
     font-family: var(--font-interface);
-    font-size: 0.62rem;
+    font-size: 0.8rem;
     letter-spacing: 0.17em;
     line-height: 1.5;
     text-align: right;
@@ -1088,7 +1084,7 @@ body:has(.game) {
 
 #sceneTime {
     color: rgb(230 220 243 / 75%);
-    font-size: 0.56rem;
+    font-size: 0.8rem;
     letter-spacing: 0.14em;
     text-shadow: 0 1px 12px rgb(0 0 0 / 85%);
 }
@@ -1102,7 +1098,7 @@ body:has(.game) {
     margin: 0;
     color: rgb(230 220 243 / 42%);
     font-family: var(--font-interface);
-    font-size: 0.52rem;
+    font-size: 0.8rem;
     letter-spacing: 0.15em;
     line-height: 1.7;
     text-transform: uppercase;
@@ -1111,7 +1107,7 @@ body:has(.game) {
 
 .visual-novel {
     --box-w: min(1180px, calc(100% - 2rem));
-    --box-h: clamp(150px, 27dvh, 250px);
+    --box-h: clamp(128px, 21dvh, 190px);
     --box-bottom: max(1rem, env(safe-area-inset-bottom));
 }
 
@@ -1135,9 +1131,8 @@ body:has(.game) {
     transform: translateX(-50%);
     border: 1px solid rgb(196 168 255 / 30%);
     border-radius: 14px;
-    background: linear-gradient(180deg, rgb(26 19 41 / 84%), rgb(11 9 19 / 92%));
-    -webkit-backdrop-filter: blur(14px);
-    backdrop-filter: blur(14px);
+    background: linear-gradient(180deg, rgb(26 19 41 / 95%), rgb(11 9 19 / 97%));
+    contain: layout;
     box-shadow: 0 18px 60px rgb(0 0 0 / 45%), inset 0 1px 0 rgb(255 255 255 / 6%);
     cursor: pointer;
     transition: border-color 200ms ease;
@@ -1167,7 +1162,7 @@ body:has(.game) {
     background: rgb(36 26 56 / 96%);
     color: var(--vn-accent);
     font-family: var(--font-interface);
-    font-size: 0.68rem;
+    font-size: 0.8rem;
     font-weight: 700;
     letter-spacing: 0.16em;
     line-height: 1.4;
@@ -1268,7 +1263,7 @@ body:has(.game) {
     margin-top: 0.35rem;
     color: var(--vn-muted);
     font-family: var(--font-interface);
-    font-size: 0.55rem;
+    font-size: 0.8rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
 }
@@ -1367,9 +1362,7 @@ body:has(.game) {
     padding: 0.8rem 1.25rem;
     border: 1px solid rgb(208 187 255 / 30%);
     border-radius: 10px;
-    background: rgb(20 15 33 / 92%);
-    -webkit-backdrop-filter: blur(14px);
-    backdrop-filter: blur(14px);
+    background: rgb(20 15 33 / 96%);
     box-shadow: 0 8px 28px rgb(0 0 0 / 35%);
     color: var(--vn-text);
     font-family: var(--font-body);
@@ -1588,7 +1581,7 @@ body:has(.game) {
 
     .game>.title-header .title-header-note {
         max-width: 65%;
-        font-size: 0.5rem;
+        font-size: 0.8rem;
         letter-spacing: 0.09em;
     }
 
@@ -1631,7 +1624,7 @@ body:has(.game) {
 
     .chapter-intro .eyebrow {
         margin-bottom: 1rem;
-        font-size: 0.58rem;
+        font-size: 0.8rem;
         letter-spacing: 0.2em;
     }
 
@@ -1667,25 +1660,25 @@ body:has(.game) {
         right: 1rem;
         max-width: 67%;
         gap: 0.3rem;
-        font-size: 0.54rem;
+        font-size: 0.8rem;
         letter-spacing: 0.1em;
     }
 
     #sceneTime {
-        font-size: 0.5rem;
+        font-size: 0.8rem;
     }
 
     .stage-caption {
         top: max(1.1rem, env(safe-area-inset-top));
         left: 1rem;
         max-width: 30%;
-        font-size: 0.43rem;
+        font-size: 0.8rem;
         letter-spacing: 0.08em;
     }
 
     .visual-novel {
         --box-w: calc(100% - 1rem);
-        --box-h: clamp(200px, 38dvh, 310px);
+        --box-h: clamp(170px, 31dvh, 250px);
         --box-bottom: max(0.5rem, env(safe-area-inset-bottom));
     }
 
@@ -1702,7 +1695,7 @@ body:has(.game) {
         left: 0.9rem;
         min-height: 26px;
         padding: 0.28rem 0.7rem;
-        font-size: 0.58rem;
+        font-size: 0.8rem;
         letter-spacing: 0.1em;
     }
 
@@ -1755,7 +1748,7 @@ body:has(.game) {
     .game>.title-footer {
         grid-template-columns: 1fr auto;
         padding: 0.8rem 1rem;
-        font-size: 0.43rem;
+        font-size: 0.8rem;
         letter-spacing: 0.06em;
     }
 
@@ -1898,4 +1891,135 @@ body:has(.game) {
         animation: none !important;
         transition: none !important;
     }
+}
+.storage-warning {
+    position: fixed;
+    left: 50%;
+    bottom: 1rem;
+    z-index: 50;
+    max-width: min(92vw, 34rem);
+    margin: 0;
+    padding: 0.6rem 1rem;
+    transform: translateX(-50%);
+    border: 1px solid var(--color-violet-deep, #7960b9);
+    border-radius: 6px;
+    background: var(--color-panel-raised, #211b2d);
+    color: var(--color-text);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+
+/* ---------- Readability pass: recognisable dialogue buttons, logo, animated intro title ---------- */
+
+.quick-menu {
+    min-height: 36px;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.quick-button {
+    padding: 0.35rem 0.9rem;
+    border: 1px solid rgb(208 187 255 / 45%);
+    border-radius: 6px;
+    background: rgb(48 36 74 / 90%);
+    color: #ece6ff;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.quick-button:hover:not(:disabled),
+.quick-button:focus-visible {
+    border-color: rgb(226 212 255 / 90%);
+    background: rgb(86 64 132 / 95%);
+    color: #fff;
+}
+
+.quick-button[aria-pressed="true"] {
+    border-color: var(--vn-accent, #c4a8ff);
+    background: var(--vn-accent, #c4a8ff);
+    color: #140f20;
+}
+
+.quick-button:focus-visible {
+    outline: 2px solid var(--vn-accent, #c4a8ff);
+    outline-offset: 2px;
+}
+
+.keyboard-hint {
+    color: #b9afd0;
+}
+
+.choice-button {
+    min-height: 54px;
+    border: 1.5px solid rgb(196 168 255 / 75%);
+    background: linear-gradient(180deg, rgb(52 39 80 / 98%), rgb(34 25 54 / 98%));
+    color: #fff;
+    font-size: 1.05rem;
+    font-weight: 600;
+    box-shadow: 0 8px 28px rgb(0 0 0 / 45%), inset 0 1px 0 rgb(255 255 255 / 10%);
+}
+
+.choice-button::before {
+    margin-right: 0.75rem;
+    color: var(--vn-accent, #c4a8ff);
+    content: "\25B8";
+}
+
+.choice-button:hover:not(:disabled) {
+    border-color: #fff;
+    background: linear-gradient(180deg, rgb(104 78 160 / 98%), rgb(74 54 118 / 98%));
+}
+
+.chapter-intro .primary-button {
+    border-color: #e0d4ff;
+    background: linear-gradient(135deg, #b79bff, #8a72ff);
+    box-shadow: 0 0 26px rgb(150 120 255 / 40%);
+    color: #140f20;
+    font-size: 1rem;
+    font-weight: 700;
+    animation: none;
+}
+
+.chapter-intro .primary-button:hover {
+    background: linear-gradient(135deg, #d0bcff, #a48cff);
+}
+
+.intro-logo {
+    position: absolute;
+    z-index: 5;
+    top: clamp(14px, 3vh, 30px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* The chapter title types itself in word by word (see chapter-page.js). */
+.chapter-intro h1 .title-word {
+    display: inline-block;
+    animation: title-word-in 900ms cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-delay: calc(450ms + var(--i, 0) * 130ms);
+}
+
+@keyframes title-word-in {
+    from {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateY(0.5em);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .chapter-intro h1 .title-word {
+        animation: none;
+    }
+}
+
+.hud-label {
+    color: #a79fc0;
 }

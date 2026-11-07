@@ -2,13 +2,17 @@
     "use strict";
 
     const STORAGE_KEY = "wsa_story_progress_v1";
+    const LEGACY_POINTS_KEY = "wsa_story_points_v1";
+    const SAVE_VERSION = 2;
     const TOTAL_CHAPTERS = 7;
+    const POINT_CATEGORIES = ["authenticity", "approval", "curiosity", "privacy", "reflection"];
 
     const createDefaultState = () => ({
-        version: 1,
+        version: SAVE_VERSION,
         lastChapter: 1,
         completedChapters: [],
         choices: {},
+        choicePoints: {},
         chapterPositions: {},
         memoryLog: {},
         updatedAt: null
@@ -22,6 +26,22 @@
         return Number.isInteger(value) && value >= 1 && value <= TOTAL_CHAPTERS;
     }
 
+    function cleanPoints(points) {
+        const clean = {};
+
+        if (!isPlainObject(points)) return clean;
+
+        Object.entries(points).forEach(([category, amount]) => {
+            const number = Number(amount);
+
+            if (POINT_CATEGORIES.includes(category) && Number.isFinite(number)) {
+                clean[category] = number;
+            }
+        });
+
+        return clean;
+    }
+
     function loadState() {
         try {
             const stored = localStorage.getItem(STORAGE_KEY);
@@ -30,12 +50,23 @@
 
             const parsed = JSON.parse(stored);
 
-            if (!isPlainObject(parsed) || parsed.version !== 1) {
+            // Version 1 saves migrate forward. Their points were stored separately and
+            // cannot be split back into choices, so they start from the recorded choices only.
+            if (!isPlainObject(parsed) || (parsed.version !== 1 && parsed.version !== SAVE_VERSION)) {
                 return createDefaultState();
             }
 
             const completedChapters = Array.isArray(parsed.completedChapters) ? [...new Set(parsed.completedChapters.filter(isValidChapter))].sort((a, b) => a - b) : [];
             const choices = isPlainObject(parsed.choices) ? parsed.choices : {};
+            const choicePoints = {};
+
+            if (isPlainObject(parsed.choicePoints)) {
+                Object.entries(parsed.choicePoints).forEach(([id, points]) => {
+                    if (Object.prototype.hasOwnProperty.call(choices, id)) {
+                        choicePoints[id] = cleanPoints(points);
+                    }
+                });
+            }
             const chapterPositions = {};
 
             if (isPlainObject(parsed.chapterPositions)) {
@@ -69,9 +100,11 @@
             return {
                 ...createDefaultState(),
                 ...parsed,
+                version: SAVE_VERSION,
                 lastChapter,
                 completedChapters,
                 choices,
+                choicePoints,
                 chapterPositions,
                 memoryLog
             };
@@ -82,18 +115,49 @@
     }
 
     let state = loadState();
+    let storageWorks = true;
 
-    function saveState() {
+    try {
+        localStorage.removeItem(LEGACY_POINTS_KEY);
+    } catch (error) {
+        storageWorks = false;
+    }
+
+    // Several updates in one click (log the line, save the position, record a choice)
+    // are written to localStorage once, right after the current task, instead of once each.
+    let saveQueued = false;
+
+    function flushState() {
+        saveQueued = false;
         state.updatedAt = new Date().toISOString();
 
         try {
             localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
-            return true;
+            storageWorks = true;
         } catch (error) {
             console.warn("WSA: Could not save progress.", error);
-            return false;
+
+            if (storageWorks) {
+                storageWorks = false;
+                window.dispatchEvent(new CustomEvent("wsa:storage-unavailable"));
+            }
         }
     }
+
+    function saveState() {
+        if (!saveQueued) {
+            saveQueued = true;
+            queueMicrotask(() => {
+                if (saveQueued) flushState();
+            });
+        }
+
+        return storageWorks;
+    }
+
+    window.addEventListener("pagehide", () => {
+        if (saveQueued) flushState();
+    });
 
     function getSnapshot() {
         return JSON.parse(JSON.stringify(state));
@@ -171,13 +235,37 @@
         return Object.prototype.hasOwnProperty.call(state.choices, choiceId) ? state.choices[choiceId] : null;
     }
 
-    function recordChoice(choiceId, choiceValue) {
+    function recordChoice(choiceId, choiceValue, points) {
         if (typeof choiceId !== "string" || !choiceId.trim() || choiceValue === undefined) {
             return false;
         }
 
         state.choices[choiceId] = choiceValue;
+        state.choicePoints[choiceId] = cleanPoints(points);
         return saveState();
+    }
+
+    // Points are never stored on their own: they are the sum of the points of the
+    // option chosen for each recorded choice, so replaying or changing a choice
+    // can never leave the totals out of step with the choices.
+    function getPoints() {
+        const totals = {};
+
+        POINT_CATEGORIES.forEach((category) => {
+            totals[category] = 0;
+        });
+
+        Object.values(state.choicePoints).forEach((points) => {
+            Object.entries(points).forEach(([category, amount]) => {
+                totals[category] += amount;
+            });
+        });
+
+        return totals;
+    }
+
+    function isStorageAvailable() {
+        return storageWorks;
     }
 
     function getChoices() {
@@ -260,6 +348,7 @@
 
     function resetProgress() {
         state = createDefaultState();
+        saveQueued = false;
 
         let saved = false;
 
@@ -300,6 +389,8 @@
         completeChapter,
         getChoice,
         recordChoice,
+        getPoints,
+        isStorageAvailable,
         getChoices,
         getChoiceCount,
         getChapterPosition,

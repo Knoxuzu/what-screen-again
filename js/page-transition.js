@@ -78,14 +78,6 @@
         });
     });
 
-    const beginButton = document.getElementById("newGame");
-
-    if (beginButton) {
-        beginButton.addEventListener("click", () => {
-            if (!beginButton.disabled) go("chapters.html");
-        });
-    }
-
     window.addEventListener("pageshow", (event) => {
         if (!event.persisted) return;
 

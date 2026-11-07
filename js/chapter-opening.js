@@ -30,12 +30,13 @@
             console.warn("Could not read the start mode.", error);
         }
 
-        if (startMode === "resume" && window.Progress && window.Progress.getChapterPosition(CHAPTER) > 0) {
-            const label = beginButton.firstChild;
+        // Resume wherever the reader left off, unless they just chose "New Story".
+        const hasSavedPlace = Boolean(window.Progress) && window.Progress.getChapterPosition(CHAPTER) > 0;
+        const resume = startMode !== "fresh" && hasSavedPlace;
+        const label = document.getElementById("beginLabel");
 
-            if (label && label.nodeType === Node.TEXT_NODE) {
-                label.textContent = " CONTINUE CHAPTER ";
-            }
+        if (resume && label) {
+            label.textContent = "CONTINUE CHAPTER";
         }
 
         function startStory() {
@@ -55,7 +56,7 @@
             beginButton.disabled = true;
 
             const started = window.StoryEngine.start({
-                resume: startMode === "resume"
+                resume
             });
 
             if (started === false) {
@@ -64,15 +65,6 @@
                 return;
             }
 
-            if (window.StoryEngine) {
-                intro.classList.add("hidden");
-                intro.classList.remove("opening-exit");
-                visualNovel.classList.remove("hidden");
-
-                if (completion) {
-                    completion.classList.add("hidden");
-                }
-            }
         }
 
         beginButton.addEventListener("click", startStory);

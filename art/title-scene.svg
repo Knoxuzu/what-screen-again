@@ -120,7 +120,6 @@
             <path d="M320 312 H363 V615 H320Z" fill="url(#windowLights)" />
             <path d="M342 245 V215" fill="none" stroke="#a9b7ff" stroke-width="3" />
             <circle cx="342" cy="215" r="6" fill="#b9caff">
-                  <animate attributeName="opacity" values=".4;1;.4" dur="2.8s" repeatCount="indefinite" />
             </circle>
 
             <path d="M383 615 V390 L416 345 L450 390 V615Z" fill="#171d3c" />
@@ -133,7 +132,6 @@
             <rect x="525" y="270" width="50" height="330" fill="url(#windowLights)" />
             <path d="M550 220 V185" fill="none" stroke="#aebdff" stroke-width="3" />
             <circle cx="550" cy="185" r="7" fill="#f6c7ee" filter="url(#smallGlow)">
-                  <animate attributeName="opacity" values=".3;1;.5;.9" dur="3.6s" repeatCount="indefinite" />
             </circle>
 
             <path d="M592 615 V365 H650 V615Z" fill="#171d3c" />
@@ -153,36 +151,20 @@
 
             <g>
                   <use href="#rain" x="250" y="125">
-                        <animateTransform attributeName="transform" type="translate" values="0 -35;0 600" dur="2.7s"
-                              repeatCount="indefinite" />
                   </use>
                   <use href="#rain" x="310" y="220">
-                        <animateTransform attributeName="transform" type="translate" values="0 -50;0 600" dur="3.2s"
-                              repeatCount="indefinite" />
                   </use>
                   <use href="#rain" x="402" y="100">
-                        <animateTransform attributeName="transform" type="translate" values="0 -60;0 600" dur="2.4s"
-                              repeatCount="indefinite" />
                   </use>
                   <use href="#rain" x="477" y="250">
-                        <animateTransform attributeName="transform" type="translate" values="0 -35;0 600" dur="3.5s"
-                              repeatCount="indefinite" />
                   </use>
                   <use href="#rain" x="580" y="120">
-                        <animateTransform attributeName="transform" type="translate" values="0 -50;0 600" dur="2.9s"
-                              repeatCount="indefinite" />
                   </use>
                   <use href="#rain" x="670" y="180">
-                        <animateTransform attributeName="transform" type="translate" values="0 -40;0 600" dur="3.1s"
-                              repeatCount="indefinite" />
                   </use>
                   <use href="#rain" x="755" y="115">
-                        <animateTransform attributeName="transform" type="translate" values="0 -70;0 600" dur="2.6s"
-                              repeatCount="indefinite" />
                   </use>
                   <use href="#rain" x="810" y="245">
-                        <animateTransform attributeName="transform" type="translate" values="0 -50;0 600" dur="3.4s"
-                              repeatCount="indefinite" />
                   </use>
             </g>
 
@@ -234,7 +216,6 @@
             <path d="M85 157 H163 L175 165 H73Z" fill="#57506f" />
 
             <circle cx="120" cy="126" r="2" fill="#93caff">
-                  <animate attributeName="opacity" values=".3;1;.3" dur="2s" repeatCount="indefinite" />
             </circle>
       </g>
 
@@ -252,7 +233,6 @@
             <ellipse cx="27" cy="0" rx="20" ry="4" fill="#151528" />
 
             <path d="M18 -12 Q8 -26 22 -37" fill="none" stroke="#c1b3e6" stroke-width="2" opacity=".5">
-                  <animate attributeName="opacity" values=".15;.65;.15" dur="4s" repeatCount="indefinite" />
             </path>
       </g>
 
@@ -267,13 +247,10 @@
 
       <g fill="#b7c6ff">
             <circle cx="180" cy="515" r="2" opacity=".6">
-                  <animate attributeName="cy" values="515;495;515" dur="7s" repeatCount="indefinite" />
             </circle>
             <circle cx="470" cy="490" r="1.5" opacity=".5">
-                  <animate attributeName="cy" values="490;475;490" dur="5s" repeatCount="indefinite" />
             </circle>
             <circle cx="800" cy="580" r="2" opacity=".4">
-                  <animate attributeName="cy" values="580;560;580" dur="8s" repeatCount="indefinite" />
             </circle>
       </g>
 

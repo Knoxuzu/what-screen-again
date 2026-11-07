@@ -7,7 +7,7 @@
     --color-panel-raised: #211b2d;
     --color-text: #f1edf5;
     --color-text-soft: #c2b9ce;
-    --color-muted: #82788f;
+    --color-muted: #aaa1be;
     --color-violet: #b7a0ff;
     --color-violet-bright: #d0bfff;
     --color-violet-deep: #7960b9;
@@ -21,7 +21,7 @@
     --font-display: "Georgia", "Times New Roman", serif;
     --font-body: "Segoe UI", "Helvetica Neue", sans-serif;
     --font-interface: "Consolas", "Courier New", monospace;
-    --text-xs: 0.68rem;
+    --text-xs: 0.8rem;
     --text-sm: 0.8rem;
     --text-base: 1rem;
     --text-lg: 1.15rem;
@@ -336,7 +336,7 @@ a:focus-visible {
     .secondary-button {
         min-height: 44px;
         padding: 0.7rem 1rem;
-        font-size: 0.72rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -431,7 +431,8 @@ a:focus-visible {
     inset: 0;
     pointer-events: none;
     opacity: 0.11;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.88' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.32'/%3E%3C/svg%3E");
+    background-image: url("../art/grain.png");
+    background-size: 128px 128px;
 }
 
 .title-header {
@@ -476,7 +477,7 @@ a:focus-visible {
 .brand-name,
 .title-header-note {
     font-family: var(--font-interface, monospace);
-    font-size: 10px;
+    font-size: 0.8rem;
     font-weight: 500;
     letter-spacing: 0.25em;
 }
@@ -502,7 +503,7 @@ a:focus-visible {
     margin: 0 0 21px;
     color: var(--title-blue);
     font-family: var(--font-interface, monospace);
-    font-size: 10px;
+    font-size: 0.8rem;
     letter-spacing: 0.28em;
     line-height: 1.8;
 }
@@ -579,7 +580,7 @@ a:focus-visible {
     background: rgba(8, 11, 25, 0.38);
     color: #a9afce;
     font-family: var(--font-interface, monospace);
-    font-size: 11px;
+    font-size: 0.8rem;
     font-weight: 500;
     letter-spacing: 0.23em;
     text-align: left;
@@ -664,7 +665,7 @@ a:focus-visible {
     margin: 15px 0 0;
     color: #767e9e;
     font-family: var(--font-interface, monospace);
-    font-size: 9px;
+    font-size: 0.8rem;
     letter-spacing: 0.13em;
     line-height: 1.7;
 }
@@ -695,7 +696,7 @@ a:focus-visible {
     border-top: 1px solid var(--title-border);
     color: #9299b8;
     font-family: var(--font-interface, monospace);
-    font-size: 9px;
+    font-size: 0.8rem;
     letter-spacing: 0.2em;
 }
 
@@ -778,17 +779,17 @@ a:focus-visible {
     .brand-mark {
         width: 31px;
         height: 31px;
-        font-size: 12px;
+        font-size: 0.8rem;
     }
 
     .brand-name {
-        font-size: 8px;
+        font-size: 0.8rem;
         letter-spacing: 0.14em;
     }
 
     .title-header-note {
         max-width: 100px;
-        font-size: 8px;
+        font-size: 0.8rem;
         line-height: 1.7;
         letter-spacing: 0.12em;
     }
@@ -813,7 +814,7 @@ a:focus-visible {
 
     .title-eyebrow {
         margin-bottom: 19px;
-        font-size: 9px;
+        font-size: 0.8rem;
         letter-spacing: 0.19em;
     }
 
@@ -824,7 +825,7 @@ a:focus-visible {
 
     .title-subtitle {
         margin-top: 21px;
-        font-size: 12px;
+        font-size: 0.8rem;
         letter-spacing: 0.065em;
     }
 
@@ -840,7 +841,7 @@ a:focus-visible {
         min-height: 51px;
         padding-right: 16px;
         padding-left: 16px;
-        font-size: 10px;
+        font-size: 0.8rem;
         letter-spacing: 0.18em;
     }
 
@@ -856,7 +857,7 @@ a:focus-visible {
     .title-footer {
         grid-template-columns: 1fr auto;
         gap: 12px;
-        font-size: 8px;
+        font-size: 0.8rem;
         letter-spacing: 0.12em;
     }
 
@@ -976,7 +977,7 @@ body.title-page {
 
 .title-quote {
     margin-top: clamp(12px, 3vh, 34px);
-    font-size: clamp(12px, 1.6vh, 16px);
+    font-size: clamp(0.8rem, 1.6vh, 16px);
     line-height: 1.55;
 }
 
@@ -1020,7 +1021,7 @@ body.title-page {
 
     .title-eyebrow {
         margin-bottom: 10px;
-        font-size: 8px;
+        font-size: 0.8rem;
     }
 
     .game-title {
@@ -1030,7 +1031,7 @@ body.title-page {
 
     .title-subtitle {
         margin-top: 12px;
-        font-size: 11px;
+        font-size: 0.8rem;
         line-height: 1.5;
     }
 
@@ -1046,18 +1047,18 @@ body.title-page {
     .menu-button-primary {
         min-height: 42px;
         padding: 0 13px;
-        font-size: 9px;
+        font-size: 0.8rem;
     }
 
     .continue-hint {
         min-height: 0;
         margin-top: 6px;
-        font-size: 8px;
+        font-size: 0.8rem;
     }
 
     .title-quote {
         margin-top: 12px;
-        font-size: 12px;
+        font-size: 0.8rem;
         line-height: 1.4;
     }
 
@@ -1169,7 +1170,7 @@ body.title-page {
 .start-choice h2 {
     margin: 0 0 10px;
     color: var(--title-blue);
-    font-size: 12px;
+    font-size: 0.8rem;
     font-weight: 500;
     letter-spacing: 0.22em;
 }
@@ -1177,7 +1178,7 @@ body.title-page {
 .start-choice p {
     margin: 0 0 20px;
     color: #b4b9df;
-    font-size: 12px;
+    font-size: 0.8rem;
     line-height: 1.7;
 }
 
@@ -1264,7 +1265,7 @@ body.title-page {
     margin-bottom: 1.4rem;
     color: var(--color-cyan);
     font-family: var(--font-interface);
-    font-size: 0.66rem;
+    font-size: 0.8rem;
     font-weight: 600;
     letter-spacing: 0.25em;
     line-height: 1.8;
@@ -1347,7 +1348,7 @@ body.title-page {
     margin-bottom: 0.8rem;
     color: var(--color-violet);
     font-family: var(--font-interface);
-    font-size: 0.62rem;
+    font-size: 0.8rem;
     font-weight: 600;
     letter-spacing: 0.18em;
     line-height: 1.7;
@@ -1396,7 +1397,7 @@ body.title-page {
     margin-top: 2rem;
     color: var(--color-muted);
     font-family: var(--font-interface);
-    font-size: 0.58rem;
+    font-size: 0.8rem;
     letter-spacing: 0.15em;
     line-height: 1.8;
     text-align: center;
@@ -1424,7 +1425,7 @@ body.title-page {
 .ending-record-number {
     color: var(--color-violet);
     font-family: var(--font-interface);
-    font-size: 0.65rem;
+    font-size: 0.8rem;
     letter-spacing: 0.12em;
 }
 
@@ -1444,7 +1445,7 @@ body.title-page {
 .record-label {
     color: var(--color-violet);
     font-family: var(--font-interface);
-    font-size: 0.62rem;
+    font-size: 0.8rem;
     font-weight: 600;
     letter-spacing: 0.18em;
     line-height: 1.7;
@@ -1514,7 +1515,7 @@ body.title-page {
     }
 
     .ending-eyebrow {
-        font-size: 0.56rem;
+        font-size: 0.8rem;
         letter-spacing: 0.16em;
     }
 
@@ -1660,7 +1661,7 @@ body.title-page {
     border-top: 1px solid var(--color-border);
     color: var(--color-muted);
     font-family: var(--font-interface);
-    font-size: 0.58rem;
+    font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: 0.13em;
     line-height: 1.6;
@@ -1722,7 +1723,7 @@ body.title-page {
 
     .title-header-note {
         max-width: 55%;
-        font-size: 0.56rem;
+        font-size: 0.8rem;
         letter-spacing: 0.12em;
     }
 
@@ -1735,7 +1736,7 @@ body.title-page {
         grid-template-columns: minmax(0, 1fr) auto;
         gap: 0.6rem;
         padding-top: 0.8rem;
-        font-size: 0.48rem;
+        font-size: 0.8rem;
         letter-spacing: 0.07em;
     }
 }
@@ -1749,4 +1750,7 @@ body.title-page {
         min-height: 34px;
         padding-top: 0.65rem;
     }
+}
+.title-header::after {
+    display: none;
 }

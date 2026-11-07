@@ -3,7 +3,6 @@
     const root = document.getElementById("personalReflection");
     if (!root || !window.WSAEndings) return;
 
-    const POINTS_KEY = "wsa_story_points_v1";
     const JOURNAL_KEY = "wsa_reflection_journal_v1";
 
     const DATA = {
@@ -44,12 +43,7 @@
         reflection: "Self-reflection"
     };
 
-    let points = {};
-    try {
-        points = JSON.parse(localStorage.getItem(POINTS_KEY)) || {};
-    } catch (e) {
-        points = {};
-    }
+    const points = window.Progress && typeof window.Progress.getPoints === "function" ? window.Progress.getPoints() : {};
 
     const total = Object.keys(LABELS).reduce((n, k) => n + (Number(points[k]) || 0), 0);
     if (total === 0) return;   // nothing played yet

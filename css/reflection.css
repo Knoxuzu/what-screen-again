@@ -74,7 +74,7 @@ body.ending-page {
     background: transparent;
     color: var(--color-muted);
     font-family: var(--font-interface);
-    font-size: .65rem;
+    font-size: 0.8rem;
     letter-spacing: .1em;
     text-transform: uppercase
 }
@@ -115,7 +115,7 @@ body.ending-page {
     align-items: center;
     margin: .55rem 0;
     font-family: var(--font-interface);
-    font-size: .7rem;
+    font-size: 0.8rem;
     color: var(--color-text-soft)
 }
 
@@ -165,7 +165,7 @@ body.ending-page {
     height: 1.2rem;
     margin-top: .3rem;
     font-family: var(--font-interface);
-    font-size: .62rem;
+    font-size: 0.8rem;
     color: var(--color-muted)
 }
 
@@ -186,7 +186,7 @@ body.ending-page {
     .has-reflection .ending-actions .secondary-button {
         min-width: 0;
         flex: 1;
-        font-size: .62rem;
+        font-size: 0.8rem;
         padding: .6rem .5rem
     }
 }

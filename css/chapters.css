@@ -7,7 +7,7 @@
     --color-panel-raised: #211b2d;
     --color-text: #f1edf5;
     --color-text-soft: #c2b9ce;
-    --color-muted: #82788f;
+    --color-muted: #aaa1be;
     --color-violet: #b7a0ff;
     --color-violet-bright: #d0bfff;
     --color-violet-deep: #7960b9;
@@ -23,7 +23,7 @@
     --font-body: "Segoe UI", "Helvetica Neue", sans-serif;
     --font-interface: "Consolas", "Courier New", monospace;
 
-    --text-xs: 0.68rem;
+    --text-xs: 0.8rem;
     --text-sm: 0.8rem;
     --text-base: 1rem;
     --text-lg: 1.15rem;
@@ -343,7 +343,7 @@ a:focus-visible {
     .secondary-button {
         min-height: 44px;
         padding: 0.7rem 1rem;
-        font-size: 0.72rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -498,7 +498,8 @@ body.chapters-page a:focus-visible {
     position: absolute;
     inset: 0;
     opacity: 0.035;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.92' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
+    background-image: url("../art/grain.png");
+    background-size: 128px 128px;
 }
 
 .background-geometry {
@@ -517,7 +518,7 @@ body.chapters-page a:focus-visible {
     align-items: center;
     gap: 10px;
     color: #aaa5c7;
-    font-size: clamp(8px, 0.65vw, 10px);
+    font-size: clamp(0.8rem, 0.65vw, 10px);
     letter-spacing: 0.15em;
 }
 
@@ -549,7 +550,7 @@ body.chapters-page a:focus-visible {
     gap: 5px;
     opacity: 0.58;
     text-align: right;
-    font-size: 8px;
+    font-size: 0.8rem;
 }
 
 .archive-interface {
@@ -575,7 +576,7 @@ body.chapters-page a:focus-visible {
 .archive-eyebrow {
     margin: 0 0 7px;
     color: #c4aaff;
-    font-size: clamp(8px, 0.8vw, 11px);
+    font-size: clamp(0.8rem, 0.8vw, 11px);
     letter-spacing: 0.24em;
 }
 
@@ -600,7 +601,7 @@ body.chapters-page a:focus-visible {
 .archive-subtitle {
     margin: 4px 0 0;
     color: #a69bbf;
-    font-size: clamp(10px, 1.3vh, 13px);
+    font-size: clamp(0.8rem, 1.3vh, 13px);
     letter-spacing: 0.045em;
 }
 
@@ -615,7 +616,7 @@ body.chapters-page a:focus-visible {
     gap: 12px;
     margin-bottom: 6px;
     color: #aaa5c7;
-    font-size: 10px;
+    font-size: 0.8rem;
     letter-spacing: 0.12em;
 }
 
@@ -664,7 +665,7 @@ body.chapters-page a:focus-visible {
     align-items: center;
     gap: 8px;
     color: rgba(169, 161, 204, 0.5);
-    font-size: 8px;
+    font-size: 0.8rem;
     letter-spacing: 0.16em;
     writing-mode: vertical-rl;
 }
@@ -717,7 +718,7 @@ body.chapters-page a:focus-visible {
     gap: 12px;
     margin: auto;
     color: var(--muted);
-    font-size: 10px;
+    font-size: 0.8rem;
     letter-spacing: 0.14em;
     text-align: center;
     animation: loading-fade 1.5s ease-in-out infinite alternate;
@@ -778,7 +779,7 @@ body.chapters-page a:focus-visible {
 .core-coordinate {
     position: absolute;
     color: rgba(198, 179, 238, 0.68);
-    font-size: 7px;
+    font-size: 0.8rem;
     letter-spacing: 0.15em;
 }
 
@@ -842,7 +843,7 @@ body.chapters-page a:focus-visible {
 
 .chapter-number {
     color: #c5aaff;
-    font-size: clamp(8px, calc(var(--fragment-size) * 0.075), 12px);
+    font-size: clamp(0.8rem, calc(var(--fragment-size) * 0.075), 12px);
     letter-spacing: 0.16em;
 }
 
@@ -850,7 +851,7 @@ body.chapters-page a:focus-visible {
     max-width: 100%;
     color: var(--white);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: clamp(11px, calc(var(--fragment-size) * 0.125), 22px);
+    font-size: clamp(0.8rem, calc(var(--fragment-size) * 0.125), 22px);
     font-weight: 800;
     line-height: 1.15;
     overflow-wrap: anywhere;
@@ -858,7 +859,7 @@ body.chapters-page a:focus-visible {
 
 .chapter-status {
     color: #c7b2ff;
-    font-size: clamp(7px, calc(var(--fragment-size) * 0.055), 10px);
+    font-size: clamp(0.8rem, calc(var(--fragment-size) * 0.055), 10px);
     letter-spacing: 0.09em;
 }
 
@@ -967,7 +968,7 @@ body.chapters-page a:focus-visible {
     align-items: center;
     gap: 8px;
     color: #c5aaff;
-    font-size: 10px;
+    font-size: 0.8rem;
     letter-spacing: 0.1em;
     white-space: nowrap;
 }
@@ -994,7 +995,7 @@ body.chapters-page a:focus-visible {
 .inspector-subtitle {
     margin: 4px 0 0;
     color: #c7adff;
-    font-size: 10px;
+    font-size: 0.8rem;
     letter-spacing: 0.12em;
 }
 
@@ -1002,7 +1003,7 @@ body.chapters-page a:focus-visible {
     max-width: 60ch;
     margin: 2px 0 0;
     color: var(--muted);
-    font-size: 11px;
+    font-size: 0.8rem;
     line-height: 1.45;
 }
 
@@ -1015,7 +1016,7 @@ body.chapters-page a:focus-visible {
 
 .inspector-status {
     color: #c5aaff;
-    font-size: 10px;
+    font-size: 0.8rem;
     letter-spacing: 0.13em;
 }
 
@@ -1028,7 +1029,7 @@ body.chapters-page a:focus-visible {
     padding: 0 18px;
     color: #0a0913 !important;
     background: #f5efff;
-    font-size: 10px;
+    font-size: 0.8rem;
     font-weight: 800;
     letter-spacing: 0.08em;
     transition: background 250ms ease, box-shadow 250ms ease, transform 250ms ease;
@@ -1055,7 +1056,7 @@ body.chapters-page a:focus-visible {
 .archive-hint {
     margin: 0;
     color: rgba(190, 174, 224, 0.66);
-    font-size: 10px;
+    font-size: 0.8rem;
     letter-spacing: 0.14em;
     text-align: center;
 }
@@ -1079,7 +1080,7 @@ body.chapters-page a:focus-visible {
     background: transparent;
     border: 0;
     cursor: pointer;
-    font-size: 8px !important;
+    font-size: 0.8rem !important;
     letter-spacing: 0.12em;
     transition: color 250ms ease;
 }
@@ -1298,7 +1299,7 @@ body.chapters-page .world-controls {
 
 @media (max-width:900px) {
     .fragment-stage-caption {
-        font-size: 7px;
+        font-size: 0.8rem;
     }
 
     .act-inspector {
@@ -1332,7 +1333,7 @@ body.chapters-page .world-controls {
     }
 
     .archive-eyebrow {
-        font-size: 8px;
+        font-size: 0.8rem;
         letter-spacing: 0.16em;
     }
 
@@ -1341,7 +1342,7 @@ body.chapters-page .world-controls {
     }
 
     .archive-subtitle {
-        font-size: 11px;
+        font-size: 0.8rem;
     }
 
     .archive-progress {
@@ -1375,7 +1376,7 @@ body.chapters-page .world-controls {
     }
 
     .inspector-description {
-        font-size: 12px;
+        font-size: 0.8rem;
     }
 
     .inspector-action {
@@ -1384,12 +1385,12 @@ body.chapters-page .world-controls {
 
     .open-act-link {
         min-height: 42px;
-        font-size: 9px;
+        font-size: 0.8rem;
     }
 
     .archive-hint {
         max-width: 90%;
-        font-size: 8px;
+        font-size: 0.8rem;
         line-height: 1.7;
     }
 
@@ -1399,7 +1400,7 @@ body.chapters-page .world-controls {
 
     .world-control {
         gap: 5px;
-        font-size: 7px !important;
+        font-size: 0.8rem !important;
     }
 
     .portal-ring--outer {
@@ -1569,7 +1570,7 @@ body.chapters-page .world-controls {
 .transition-message-text {
     color: #c5c7dc;
     font-family: var(--font-mono, monospace);
-    font-size: clamp(0.65rem, 1.6vw, 0.8rem);
+    font-size: clamp(0.8rem, 1.6vw, 0.8rem);
     font-weight: 600;
     letter-spacing: 0.28em;
     line-height: 1.8;
@@ -1598,7 +1599,7 @@ body.chapters-page .world-controls {
     gap: 16px;
     color: rgb(185 190 220 / 45%);
     font-family: var(--font-mono, monospace);
-    font-size: 0.58rem;
+    font-size: 0.8rem;
     letter-spacing: 0.13em;
     text-transform: uppercase;
     opacity: 0;
@@ -1822,11 +1823,107 @@ body.chapters-page .world-controls {
 
 @media (max-width:480px) {
     .transition-coordinate {
-        font-size: 0.5rem;
+        font-size: 0.8rem;
         letter-spacing: 0.08em;
     }
 
     .transition-message {
         gap: 14px;
+    }
+}
+/* Big spinning / breathing layers get their own compositor layer so they do not repaint each frame. */
+.portal-halo,
+.portal-ring--outer,
+.portal-ring--middle,
+.core-ring--one,
+.core-ring--two,
+.core-ring--three {
+    will-change: transform;
+}
+
+
+/* ---------- Readability pass: shared logo, visible controls ---------- */
+
+.archive-logo {
+    position: absolute;
+    z-index: 30;
+    top: clamp(12px, 2.4vh, 24px);
+    left: clamp(18px, 3vw, 44px);
+}
+
+.world-label--top {
+    justify-self: end;
+}
+
+.world-control {
+    padding: 0.45rem 0.9rem;
+    border: 1px solid rgb(200 190 255 / 45%);
+    border-radius: 6px;
+    background: rgb(30 22 52 / 85%);
+    color: #ece6ff;
+    font-weight: 700;
+}
+
+.world-control:hover,
+.world-control:focus-visible {
+    border-color: #fff;
+    background: rgb(70 52 118 / 95%);
+    color: #fff;
+}
+
+.open-act-link {
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    body.chapters-page {
+        overflow-x: hidden;
+    }
+
+    .archive-logo {
+        top: 10px;
+        left: 14px;
+    }
+
+    .archive-logo .wsa-logo-text {
+        display: none;
+    }
+
+    .archive-logo .wsa-logo-mark {
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+
+    .world-label--top {
+        display: none;
+    }
+
+    .archive-introduction {
+        margin-top: 2.6rem;
+    }
+
+    .archive-eyebrow {
+        letter-spacing: 0.1em;
+    }
+
+    .archive-title {
+        font-size: clamp(1.5rem, 8vw, 2rem);
+    }
+
+    .world-controls {
+        flex-wrap: wrap;
+        gap: 0.4rem;
+        justify-content: center;
+        min-width: 0;
+    }
+
+    .world-control {
+        min-width: 0;
+        padding: 0.4rem 0.6rem;
+        letter-spacing: 0.04em;
+    }
+
+    .archive-hint {
+        letter-spacing: 0.06em;
     }
 }

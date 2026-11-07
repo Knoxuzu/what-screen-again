@@ -36,7 +36,7 @@
     margin: 0 0 8px;
     color: var(--title-blue, #8cbaff);
     font-family: var(--font-interface, monospace);
-    font-size: 9px;
+    font-size: 0.8rem;
     letter-spacing: .25em}
 
 .title-note-text {

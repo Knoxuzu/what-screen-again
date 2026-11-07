@@ -98,7 +98,7 @@ button {
 .eyebrow {
     margin: 0 0 12px;
     color: #b59cdb;
-    font: 9px/1.4 ui-monospace, Consolas, monospace;
+    font: 0.8rem/1.4 ui-monospace, Consolas, monospace;
     letter-spacing: 0.3em;
 }
 
@@ -114,7 +114,7 @@ button {
 .subtitle {
     margin: 12px 0 0;
     color: var(--muted);
-    font-size: clamp(11px, 1vw, 14px);
+    font-size: clamp(0.8rem, 1vw, 14px);
     letter-spacing: 0.04em;
 }
 
@@ -222,7 +222,7 @@ button {
 .book-number {
     z-index: 1;
     color: #a994c5;
-    font: 10px ui-monospace, Consolas, monospace;
+    font: 0.8rem ui-monospace, Consolas, monospace;
     letter-spacing: 0.12em;
 }
 
@@ -346,7 +346,7 @@ button {
 
 .shelf-caption p {
     margin: 0;
-    font-size: 11px;
+    font-size: 0.8rem;
     letter-spacing: 0.05em;
 }
 
@@ -370,7 +370,7 @@ button {
     justify-content: center;
     gap: 12px;
     color: #80718f;
-    font: 8px ui-monospace, Consolas, monospace;
+    font: 0.8rem ui-monospace, Consolas, monospace;
     letter-spacing: 0.14em;
 }
 
@@ -459,7 +459,7 @@ button {
 .reader-eyebrow {
     margin: 0 0 10px;
     color: #b99bdf;
-    font: 9px ui-monospace, Consolas, monospace;
+    font: 0.8rem ui-monospace, Consolas, monospace;
     letter-spacing: 0.23em;
 }
 
@@ -472,7 +472,7 @@ button {
 .reader-subtitle {
     margin: 12px 0 0;
     color: #a99ab8;
-    font-size: 11px;
+    font-size: 0.8rem;
     line-height: 1.6;
 }
 
@@ -520,7 +520,7 @@ button {
 .archive-scene-heading {
     margin: 24px 0 20px;
     color: #a98dc9;
-    font: 9px ui-monospace, Consolas, monospace;
+    font: 0.8rem ui-monospace, Consolas, monospace;
     letter-spacing: 0.19em;
     text-transform: uppercase;
 }
@@ -540,7 +540,7 @@ button {
 .archive-speaker {
     margin: 0 0 9px;
     color: #cbb2f4;
-    font: 9px ui-monospace, Consolas, monospace;
+    font: 0.8rem ui-monospace, Consolas, monospace;
     letter-spacing: 0.14em;
     text-transform: uppercase;
 }
@@ -548,7 +548,7 @@ button {
 .archive-dialogue {
     margin: 0;
     color: #e7deef;
-    font: 15px/1.9 Georgia, "Times New Roman", serif;
+    font: 1.05rem/1.9 Georgia, "Times New Roman", serif;
     white-space: pre-wrap;
     overflow-wrap: anywhere;
 }
@@ -573,14 +573,14 @@ button {
 .archive-choice-label {
     margin: 0 0 8px;
     color: #ad8fda;
-    font: 8px ui-monospace, Consolas, monospace;
+    font: 0.8rem ui-monospace, Consolas, monospace;
     letter-spacing: 0.18em;
 }
 
 .archive-choice-text {
     margin: 0;
     color: #e7d7ff;
-    font: 14px/1.7 Georgia, "Times New Roman", serif;
+    font: 1rem/1.7 Georgia, "Times New Roman", serif;
 }
 
 .archive-empty {
@@ -600,7 +600,7 @@ button {
     padding-top: 16px;
     border-top: 1px solid #bba0ff20;
     color: #857590;
-    font: 8px ui-monospace, Consolas, monospace;
+    font: 0.8rem ui-monospace, Consolas, monospace;
     letter-spacing: 0.13em;
 }
 
@@ -698,16 +698,16 @@ button {
     }
 
     .book-number {
-        font-size: 8px;
+        font-size: 0.8rem;
     }
 
     .book-title {
-        font-size: 9px;
+        font-size: 0.8rem;
         letter-spacing: 0.04em;
     }
 
     .book-seal {
-        font-size: 11px;
+        font-size: 0.8rem;
     }
 
     .shelf-caption {
@@ -717,14 +717,14 @@ button {
 
     .shelf-caption p {
         max-width: 72vw;
-        font-size: 10px;
+        font-size: 0.8rem;
     }
 
     .shelf-progress {
         right: 12px;
         left: 12px;
         gap: 8px;
-        font-size: 7px;
+        font-size: 0.8rem;
     }
 
     .progress-track {
@@ -753,7 +753,7 @@ button {
     }
 
     .reader-bottom {
-        font-size: 7px;
+        font-size: 0.8rem;
     }
 }
 
@@ -805,7 +805,7 @@ button {
     align-items: center;
     gap: 8px;
     color: #a9a2c5;
-    font: 9px/1.4 ui-monospace, Consolas, monospace;
+    font: 0.8rem/1.4 ui-monospace, Consolas, monospace;
     letter-spacing: 0.2em;
     text-decoration: none;
     transition: color 250ms ease;
@@ -831,4 +831,30 @@ button {
     .shelf-screen {
         padding-top: 48px;
     }
+}
+
+/* ---------- Readability pass: shared logo, visible back button ---------- */
+
+.shelf-logo {
+    position: absolute;
+    z-index: 3;
+    top: clamp(12px, 2.4vh, 24px);
+    right: clamp(18px, 4vw, 64px);
+}
+
+.shelf-back {
+    padding: 0.5rem 0.95rem;
+    border: 1px solid rgb(200 190 255 / 50%);
+    border-radius: 6px;
+    background: rgb(30 22 52 / 85%);
+    color: #ece6ff;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.shelf-back:hover,
+.shelf-back:focus-visible {
+    border-color: #fff;
+    background: rgb(70 52 118 / 95%);
+    color: #fff;
 }

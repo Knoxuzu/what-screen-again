@@ -2,7 +2,6 @@
     "use strict";
 
     const PROGRESS_EVENT = "wsa:progress-updated";
-    const POINTS_KEY = "wsa_story_points_v1";
     const CHAPTER_NUMBER = Number(document.body.dataset.chapter) || 1;
     const ART_BASE = "../art/";
 
@@ -50,7 +49,6 @@
             progressFill: "progressFill",
             dialogueNavigation: "dialogueNavigation",
             previousButton: "previousLine",
-            nextButton: "nextLine",
             choices: "choices",
             completion: "chapterComplete",
             autoToggle: "autoToggle",
@@ -66,35 +64,14 @@
         return window.Progress || null;
     }
 
-    function loadPointScores() {
-        try {
-            const saved = JSON.parse(localStorage.getItem(POINTS_KEY));
+    // Points always come from the choices recorded in Progress (see Progress.getPoints).
+    function syncPoints() {
+        const progress = getProgress();
+        const totals = progress && typeof progress.getPoints === "function" ? progress.getPoints() : {};
 
-            if (saved && typeof saved === "object") {
-                for (const key of Object.keys(state.pointScores)) {
-                    const value = Number(saved[key]);
-                    state.pointScores[key] = Number.isFinite(value) ? value : 0;
-                }
-            }
-        } catch (error) {
-            console.warn("Could not load story points.", error);
-        }
-    }
-
-    function savePointScores() {
-        try {
-            localStorage.setItem(POINTS_KEY, JSON.stringify(state.pointScores));
-        } catch (error) {
-            console.warn("Could not save story points.", error);
-        }
-    }
-
-    function resetPointScores() {
         for (const key of Object.keys(state.pointScores)) {
-            state.pointScores[key] = 0;
+            state.pointScores[key] = Number(totals[key]) || 0;
         }
-
-        savePointScores();
     }
 
     function getSavedChoice(key) {
@@ -365,11 +342,6 @@
         if (elements.previousButton) {
             elements.previousButton.disabled = state.currentIndex <= 0;
         }
-
-        if (elements.nextButton) {
-            elements.nextButton.disabled =
-                total === 0 || state.currentIndex >= total - 1;
-        }
     }
 
     function savePosition(line) {
@@ -410,25 +382,10 @@
         const progress = getProgress();
 
         if (progress && typeof progress.recordChoice === "function") {
-            progress.recordChoice(choice.key, choice.value);
+            progress.recordChoice(choice.key, choice.value, choice.points);
         }
 
-        if (choice.points && typeof choice.points === "object") {
-            for (const [category, amount] of Object.entries(choice.points)) {
-                if (!(category in state.pointScores)) {
-                    state.pointScores[category] = 0;
-                }
-
-                const points = Number(amount);
-
-                if (Number.isFinite(points)) {
-                    state.pointScores[category] += points;
-                }
-            }
-
-            savePointScores();
-        }
-
+        syncPoints();
         dispatchProgressUpdate();
     }
 
@@ -473,21 +430,7 @@
                     }
                 }
 
-                const previousValue = getSavedChoice(choice.key);
-                const previousChoice = previousValue === null ? null : (currentLine?.choices || []).find((item) => item.value === previousValue);
-
-                if (previousChoice?.points) {
-                    for (const [category, amount] of Object.entries(
-                        previousChoice.points
-                    )) {
-                        if (category in state.pointScores) {
-                            state.pointScores[category] = Math.max(0, state.pointScores[category] - (Number(amount) || 0));
-                        }
-                    }
-                }
-
                 recordChoice(choice);
-                savePointScores();
                 clearChoices();
                 refreshVisibleLines();
 
@@ -772,7 +715,7 @@
     }
 
     function startChapter(options = {}) {
-        const chapter = (window.WSAChapters && window.WSAChapters[CHAPTER_NUMBER]) || (CHAPTER_NUMBER === 1 ? window.ChapterOne : null);
+        const chapter = window.WSAChapters && window.WSAChapters[CHAPTER_NUMBER];
 
         if (!chapter || !Array.isArray(chapter.lines) || chapter.lines.length === 0) {
             console.error(`Chapter ${CHAPTER_NUMBER} dialogue is missing or empty. Check chapter-${CHAPTER_NUMBER}.js.`);
@@ -787,11 +730,7 @@
         state.started = false;
         state.finished = false;
 
-        if (!resume && CHAPTER_NUMBER === 1) {
-            resetPointScores();
-        } else {
-            loadPointScores();
-        }
+        syncPoints();
 
         refreshVisibleLines();
 
@@ -836,10 +775,6 @@
             });
         }
 
-        if (elements.nextButton) {
-            elements.nextButton.addEventListener("click", advance);
-        }
-
         if (elements.previousButton) {
             elements.previousButton.addEventListener("click", goBack);
         }
@@ -874,10 +809,22 @@
         });
     }
 
+    function showStorageWarning() {
+        if (document.getElementById("storageWarning")) return;
+
+        const note = document.createElement("p");
+        note.id = "storageWarning";
+        note.className = "storage-warning";
+        note.setAttribute("role", "status");
+        note.textContent = "Your browser is blocking saving, so progress may be lost when you leave this page.";
+        document.body.append(note);
+    }
+
     function init() {
         getElements();
-        loadPointScores();
+        syncPoints();
         bindEvents();
+        window.addEventListener("wsa:storage-unavailable", showStorageWarning);
 
         window.StoryEngine = Object.freeze({
             getPoints() {
@@ -886,7 +833,6 @@
             getPoint(category) {
                 return state.pointScores[category] || 0;
             },
-            resetPoints: resetPointScores,
             start: startChapter,
             advance,
             goBack

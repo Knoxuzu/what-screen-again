@@ -43,7 +43,7 @@
 .brand-name,
 .title-header-note {
     font-family: var(--font-interface, monospace);
-    font-size: 10px;
+    font-size: 0.8rem;
     font-weight: 500;
     letter-spacing: 0.25em;
 }
@@ -66,7 +66,7 @@
     border-top: 1px solid var(--title-border);
     color: #9299b8;
     font-family: var(--font-interface, monospace);
-    font-size: 9px;
+    font-size: 0.8rem;
     letter-spacing: 0.2em;
 }
 
@@ -92,17 +92,17 @@
     .brand-mark {
         width: 31px;
         height: 31px;
-        font-size: 12px;
+        font-size: 0.8rem;
     }
 
     .brand-name {
-        font-size: 8px;
+        font-size: 0.8rem;
         letter-spacing: 0.14em;
     }
 
     .title-header-note {
         max-width: 100px;
-        font-size: 8px;
+        font-size: 0.8rem;
         line-height: 1.7;
         letter-spacing: 0.12em;
     }
@@ -110,7 +110,7 @@
     .title-footer {
         grid-template-columns: 1fr auto;
         gap: 12px;
-        font-size: 8px;
+        font-size: 0.8rem;
         letter-spacing: 0.12em;
     }
 
@@ -215,7 +215,7 @@
     border-top: 1px solid var(--color-border);
     color: var(--color-muted);
     font-family: var(--font-interface);
-    font-size: 0.58rem;
+    font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: 0.13em;
     line-height: 1.6;
@@ -277,7 +277,7 @@
 
     .title-header-note {
         max-width: 55%;
-        font-size: 0.56rem;
+        font-size: 0.8rem;
         letter-spacing: 0.12em;
     }
 
@@ -290,7 +290,7 @@
         grid-template-columns: minmax(0, 1fr) auto;
         gap: 0.6rem;
         padding-top: 0.8rem;
-        font-size: 0.48rem;
+        font-size: 0.8rem;
         letter-spacing: 0.07em;
     }
 }

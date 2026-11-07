@@ -16,8 +16,7 @@
     const newLabel = newButton?.querySelector(".menu-button-label");
     const cancelButton = document.getElementById("cancelStart");
 
-    const CHAPTER_ONE_URL = "chapters/chapter-1.html";
-    const POINTS_KEY = "wsa_story_points_v1";
+    const CHAPTER_ONE_URL = "chapters/chapter.html?act=1";
     const START_MODE_KEY = "wsa_start_mode_v1";
 
     const DEFAULT_TEXT = "Continue your previous progress, or begin a new story?";
@@ -82,12 +81,6 @@
 
         if (progress && typeof progress.resetProgress === "function") {
             progress.resetProgress();
-        }
-
-        try {
-            localStorage.removeItem(POINTS_KEY);
-        } catch (error) {
-            console.warn("Could not clear saved story points.", error);
         }
 
         navigateToChapter("fresh");
