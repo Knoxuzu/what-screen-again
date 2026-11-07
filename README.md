@@ -4,4 +4,4 @@
 
 Disclaimer: "What Screen Again?" is an academic project developed for educational and awareness purposes. Its storyline, characters, and scenarios are fictional and are intended to encourage reflection on how online self-presentation may influence personal identity. The website does not provide psychological advice, diagnose mental health conditions, or claim to represent everyone's experiences with social media and online identity.
 
-Project Status: Currently in development.
+Project Status: Complete.
